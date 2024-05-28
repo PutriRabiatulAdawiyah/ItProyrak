@@ -1,5 +1,5 @@
 
-  <div class="hero page-inner overlay" style="background-image: url('images/hero_bg_1.jpg')">
+<?php echo view('layoutfreeuser/header'); ?>
     <div class="container">
       <div class="row justify-content-center align-items-center">
         <div class="col-lg-9 text-center mt-5">
@@ -301,3 +301,4 @@
       </div>
     </div>
   </div>
+  <?php echo view('layoutfreeuser/footer'); ?>  

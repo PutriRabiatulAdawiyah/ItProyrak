@@ -93,7 +93,7 @@
 
               <div class="property-item">
                 <a href="property-single.html" class="img">
-                  <img src="images/img_4.jpg" alt="Image" class="img-fluid" />
+                  <img src="/freeuser/images/img_4.jpg" alt="Image" class="img-fluid" />
                 </a>
 
                 <div class="property-content">
@@ -110,7 +110,7 @@
 
               <div class="property-item">
                 <a href="property-single.html" class="img">
-                  <img src="images/img_5.jpg" alt="Image" class="img-fluid" />
+                  <img src="/freeuser/images/img_5.jpg" alt="Image" class="img-fluid" />
                 </a>
 
                 <div class="property-content">
@@ -127,7 +127,7 @@
 
               <div class="property-item">
                 <a href="property-single.html" class="img">
-                  <img src="images/img_6.jpg" alt="Image" class="img-fluid" />
+                  <img src="/freeuser/images/img_6.jpg" alt="Image" class="img-fluid" />
                 </a>
 
                 <div class="property-content">
@@ -144,7 +144,7 @@
 
               <div class="property-item">
                 <a href="property-single.html" class="img">
-                  <img src="images/img_7.jpg" alt="Image" class="img-fluid" />
+                  <img src="/freeuser/images/img_7.jpg" alt="Image" class="img-fluid" />
                 </a>
 
                 <div class="property-content">
@@ -161,7 +161,7 @@
 
               <div class="property-item">
                 <a href="property-single.html" class="img">
-                  <img src="images/img_8.jpg" alt="Image" class="img-fluid" />
+                  <img src="/freeuser/images/img_8.jpg" alt="Image" class="img-fluid" />
                 </a>
 
                 <div class="property-content">
@@ -178,7 +178,7 @@
 
               <div class="property-item">
                 <a href="property-single.html" class="img">
-                  <img src="images/img_1.jpg" alt="Image" class="img-fluid" />
+                  <img src="/freeuser/images/img_1.jpg" alt="Image" class="img-fluid" />
                 </a>
 
                 <div class="property-content">
