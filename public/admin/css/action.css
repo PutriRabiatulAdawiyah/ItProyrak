@@ -1,0 +1,31 @@
+.table .actions {
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    /* Sebar tombol ke seluruh lebar kolom */
+    gap: 5px;
+    /* Atur jarak antar tombol */
+}
+
+.table .btn {
+    padding: 5px 8px;
+    /* Atur padding tombol agar lebih kecil */
+    margin: 0;
+    /* Hapus margin default */
+    flex: 1;
+    /* Pastikan tombol mengisi ruang yang tersedia */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.table .btn i {
+    margin: 0;
+    /* Hapus margin pada ikon */
+}
+
+.table th,
+.table td {
+    vertical-align: middle;
+    /* Pastikan teks berada di tengah secara vertikal */
+}
