@@ -6,9 +6,9 @@ use CodeIgniter\Model;
 
 class Profil_Model extends Model
 {
-    protected $table = 'profil'; // Ganti dengan nama tabel yang sebenarnya
-    protected $primaryKey = 'id_profil'; // Ganti dengan primary key yang sebenarnya
-    protected $allowedFields = ['judul', 'keterangan', 'tgl_dibuat', 'deskripsi']; // Ganti dengan field yang sebenarnya
+    protected $table = 'profil'; // Nama tabel yang sebenarnya
+    protected $primaryKey = 'id_profil'; // Primary key yang sebenarnya
+    protected $allowedFields = ['judul', 'keterangan', 'tgl_dibuat', 'deskripsi']; // Field yang sebenarnya
 
     public function getProfil()
     {
@@ -17,16 +17,16 @@ class Profil_Model extends Model
 
     public function tambahProfil($data)
     {
-        return $this->insert($data);
+        return $this->tambah($data);
     }
 
-    public function updateProfil($id, $data)
+    public function updateProfil($id_profil, $data)
     {
-        return $this->update($id, $data);
+        return $this->edit($id_profil, $data);
     }
 
-    public function hapusProfil($id)
+    public function hapusProfil($id_profil)
     {
-        return $this->delete($id);
+        return $this->hapus($id_profil);
     }
 }

@@ -1,67 +1,65 @@
 <?php
-
 namespace App\Controllers;
 
 use App\Models\Profil_Model;
+use CodeIgniter\Controller;
 
 class Profil extends BaseController
 {
-    protected $mprofil;
+    protected $profilModel;
 
     public function __construct()
     {
-        $this->mprofil = new Profil_Model();
+        $this->profilModel = new Profil_Model();
     }
 
     public function index()
     {
-        $getprofil = $this->mprofil->getProfil();
-        $profi = [
-            'DataProfil' => $getprofil,
-        ];
-
-        return view('backendadmin/profil_view', $profi);
+        $data['DataProfil'] = $this->profilModel->getProfil();
+        return view('backendadmin/profil_view', $data);
     }
 
     public function tambah()
     {
-        // Tangkap data dari form
-        $data = [
-            'judul' => $this->request->getPost('judul'),
-            'keterangan' => $this->request->getPost('keterangan'),
-            'tgl_dibuat' => date('Y-m-d H:i:s'), // Tanggal dibuat saat ini
-            'deskripsi' => $this->request->getPost('deskripsi'),
-        ];
+        if ($this->request->getMethod() === 'post') {
+            $data = [
+                'judul' => $this->request->getPost('judul'),
+                'keterangan' => $this->request->getPost('keterangan'),
+                'tgl_dibuat' => date('Y-m-d H:i:s'),
+                'deskripsi' => $this->request->getPost('deskripsi'),
+            ];
 
-        // Panggil fungsi tambahProfil dari model
-        $this->mprofil->tambahProfil($data);
-
-        // Redirect ke halaman utama setelah selesai
-        return redirect()->to(base_url('profil'));
+            if ($this->profilModel->tambahProfil($data)) {
+                return redirect()->to(base_url('profil'))->with('status', 'Profil berhasil ditambahkan');
+            } else {
+                return redirect()->to(base_url('profil'))->with('status', 'Gagal menambahkan profil');
+            }
+        }
     }
 
-    public function edit($id)
+    public function edit($id_profil)
     {
-        // Tangkap data dari form
-        $data = [
-            'judul' => $this->request->getPost('judul'),
-            'keterangan' => $this->request->getPost('keterangan'),
-            'deskripsi' => $this->request->getPost('deskripsi'),
-        ];
+        if ($this->request->getMethod() === 'post') {
+            $data = [
+                'judul' => $this->request->getPost('judul'),
+                'keterangan' => $this->request->getPost('keterangan'),
+                'deskripsi' => $this->request->getPost('deskripsi'),
+            ];
 
-        // Panggil fungsi updateProfil dari model
-        $this->mprofil->updateProfil($id, $data);
-
-        // Redirect ke halaman utama setelah selesai
-        return redirect()->to(base_url('profil'));
+            if ($this->profilModel->updateProfil($id_profil, $data)) {
+                return redirect()->to(base_url('profil'))->with('status', 'Profil berhasil diubah');
+            } else {
+                return redirect()->to(base_url('profil'))->with('status', 'Gagal mengubah profil');
+            }
+        }
     }
 
-    public function hapus($id)
+    public function hapus($id_profil)
     {
-        // Panggil fungsi hapusProfil dari model
-        $this->mprofil->hapusProfil($id);
-
-        // Redirect ke halaman utama setelah selesai
-        return redirect()->to(base_url('profil'));
+        if ($this->profilModel->hapusProfil($id_profil)) {
+            return redirect()->to(base_url('profil'))->with('status', 'Profil berhasil dihapus');
+        } else {
+            return redirect()->to(base_url('profil'))->with('status', 'Gagal menghapus profil');
+        }
     }
 }
