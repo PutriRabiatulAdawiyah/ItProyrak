@@ -1,0 +1,533 @@
+CRITICAL - 2024-05-31 14:43:36 --> ParseError: syntax error, unexpected token "->", expecting ")"
+[Method: GET, Route: profil]
+in APPPATH\Controllers\Profil.php on line 13.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\SIMKOS\\app\\Controllers\\Profil.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Profil')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Profil')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\Profil', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\SIMKOS\\public\\index.php')
+CRITICAL - 2024-05-31 14:43:51 --> ParseError: syntax error, unexpected token "->", expecting ")"
+[Method: GET, Route: profil]
+in APPPATH\Controllers\Profil.php on line 13.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\SIMKOS\\app\\Controllers\\Profil.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Profil')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Profil')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\Profil', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\SIMKOS\\public\\index.php')
+CRITICAL - 2024-05-31 14:44:36 --> ParseError: syntax error, unexpected token "->", expecting ")"
+[Method: GET, Route: profil]
+in APPPATH\Controllers\Profil.php on line 13.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\SIMKOS\\app\\Controllers\\Profil.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Profil')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Profil')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\Profil', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\SIMKOS\\public\\index.php')
+CRITICAL - 2024-05-31 14:48:08 --> ParseError: syntax error, unexpected token "{", expecting "("
+[Method: GET, Route: profil]
+in APPPATH\Controllers\Profil.php on line 11.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\SIMKOS\\app\\Controllers\\Profil.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Profil')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Profil')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\Profil', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\SIMKOS\\public\\index.php')
+CRITICAL - 2024-05-31 14:49:49 --> Error: Class "App\Models\Profil_Model" not found
+[Method: GET, Route: profil]
+in APPPATH\Controllers\Profil.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Profil->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\SIMKOS\\public\\index.php')
+CRITICAL - 2024-05-31 14:54:38 --> Error: Class "App\Models\BaseController" not found
+[Method: GET, Route: profil]
+in APPPATH\Models\Profil_Model.php on line 7.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(317): include_once()
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\SIMKOS\\app\\Models\\Profil_Model.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Profil_Model')
+ 4 APPPATH\Controllers\Profil.php(14): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Profil_Model')
+ 5 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Profil->__construct()
+ 6 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\SIMKOS\\public\\index.php')
+ERROR - 2024-05-31 14:55:05 --> mysqli_sql_exception: Unknown column 'profil' in 'order clause' in C:\xampp\htdocs\SIMKOS\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\xampp\htdocs\SIMKOS\system\Database\MySQLi\Connection.php(308): mysqli->query('SELECT * FROM p...', 0)
+#1 C:\xampp\htdocs\SIMKOS\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM p...')
+#2 C:\xampp\htdocs\SIMKOS\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM p...')
+#3 C:\xampp\htdocs\SIMKOS\app\Models\Profil_Model.php(11): CodeIgniter\Database\BaseConnection->query('SELECT * FROM p...')
+#4 C:\xampp\htdocs\SIMKOS\app\Controllers\Profil.php(19): App\Models\Profil_Model->getprofil()
+#5 C:\xampp\htdocs\SIMKOS\system\CodeIgniter.php(933): App\Controllers\Profil->index()
+#6 C:\xampp\htdocs\SIMKOS\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profil))
+#7 C:\xampp\htdocs\SIMKOS\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\SIMKOS\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\SIMKOS\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\SIMKOS\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\xampp\htdocs\SIMKOS\system\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2024-05-31 14:55:05 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'profil' in 'order clause'
+[Method: GET, Route: profil]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 APPPATH\Models\Profil_Model.php(11): CodeIgniter\Database\BaseConnection->query('SELECT * FROM profil ORDER BY profil ASC')
+ 2 APPPATH\Controllers\Profil.php(19): App\Models\Profil_Model->getprofil()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Profil->index()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profil))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\SIMKOS\\public\\index.php')
+CRITICAL - 2024-05-31 14:55:05 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'profil' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 313.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM profil ORDER BY profil ASC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM profil ORDER BY profil ASC')
+ 3 APPPATH\Models\Profil_Model.php(11): CodeIgniter\Database\BaseConnection->query('SELECT * FROM profil ORDER BY profil ASC')
+ 4 APPPATH\Controllers\Profil.php(19): App\Models\Profil_Model->getprofil()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Profil->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profil))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\SIMKOS\\public\\index.php')
+CRITICAL - 2024-05-31 14:55:05 --> [Caused by] mysqli_sql_exception: Unknown column 'profil' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 308.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(308): mysqli->query('SELECT * FROM profil ORDER BY profil ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM profil ORDER BY profil ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM profil ORDER BY profil ASC')
+ 4 APPPATH\Models\Profil_Model.php(11): CodeIgniter\Database\BaseConnection->query('SELECT * FROM profil ORDER BY profil ASC')
+ 5 APPPATH\Controllers\Profil.php(19): App\Models\Profil_Model->getprofil()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Profil->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profil))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\SIMKOS\\public\\index.php')
+CRITICAL - 2024-05-31 15:03:51 --> ParseError: syntax error, unexpected token "(", expecting identifier or variable or "{" or "$"
+[Method: GET, Route: profil]
+in APPPATH\Models\Profil_Model.php on line 15.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\SIMKOS\\app\\Models\\Profil_Model.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Profil_Model')
+ 3 APPPATH\Controllers\Profil.php(14): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Profil_Model')
+ 4 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Profil->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\SIMKOS\\public\\index.php')
+CRITICAL - 2024-05-31 15:04:19 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "profil_view.php"
+[Method: GET, Route: profil]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('profil_view.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('profil_view', [], true)
+ 3 APPPATH\Controllers\Profil.php(24): view('profil_view', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Profil->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profil))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\SIMKOS\\public\\index.php')
+CRITICAL - 2024-05-31 15:07:59 --> TypeError: CodeIgniter\Database\BaseBuilder::orderBy(): Argument #3 ($escape) must be of type ?bool, string given, called in C:\xampp\htdocs\SIMKOS\system\Model.php on line 919
+[Method: GET, Route: profil]
+in SYSTEMPATH\Database\BaseBuilder.php on line 1441.
+ 1 SYSTEMPATH\Model.php(919): CodeIgniter\Database\BaseBuilder->orderBy('judul', 'keterangan', 'tgl_dibuat', 'deskripsi', 'ASC')
+ 2 APPPATH\Models\Profil_Model.php(16): CodeIgniter\Model->__call('orderBy', [...])
+ 3 APPPATH\Controllers\Profil.php(19): App\Models\Profil_Model->getprofil()
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Profil->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profil))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\SIMKOS\\public\\index.php')
+CRITICAL - 2024-05-31 15:08:16 --> TypeError: CodeIgniter\Database\BaseBuilder::orderBy(): Argument #3 ($escape) must be of type ?bool, string given, called in C:\xampp\htdocs\SIMKOS\system\Model.php on line 919
+[Method: GET, Route: profil]
+in SYSTEMPATH\Database\BaseBuilder.php on line 1441.
+ 1 SYSTEMPATH\Model.php(919): CodeIgniter\Database\BaseBuilder->orderBy('judul', 'keterangan', 'tgl_dibuat', 'deskripsi', 'ASC')
+ 2 APPPATH\Models\Profil_Model.php(16): CodeIgniter\Model->__call('orderBy', [...])
+ 3 APPPATH\Controllers\Profil.php(19): App\Models\Profil_Model->getprofil()
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Profil->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profil))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\SIMKOS\\public\\index.php')
+CRITICAL - 2024-05-31 15:08:19 --> TypeError: CodeIgniter\Database\BaseBuilder::orderBy(): Argument #3 ($escape) must be of type ?bool, string given, called in C:\xampp\htdocs\SIMKOS\system\Model.php on line 919
+[Method: GET, Route: profil]
+in SYSTEMPATH\Database\BaseBuilder.php on line 1441.
+ 1 SYSTEMPATH\Model.php(919): CodeIgniter\Database\BaseBuilder->orderBy('judul', 'keterangan', 'tgl_dibuat', 'deskripsi', 'ASC')
+ 2 APPPATH\Models\Profil_Model.php(16): CodeIgniter\Model->__call('orderBy', [...])
+ 3 APPPATH\Controllers\Profil.php(19): App\Models\Profil_Model->getprofil()
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Profil->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profil))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\SIMKOS\\public\\index.php')
+CRITICAL - 2024-05-31 15:08:20 --> TypeError: CodeIgniter\Database\BaseBuilder::orderBy(): Argument #3 ($escape) must be of type ?bool, string given, called in C:\xampp\htdocs\SIMKOS\system\Model.php on line 919
+[Method: GET, Route: profil]
+in SYSTEMPATH\Database\BaseBuilder.php on line 1441.
+ 1 SYSTEMPATH\Model.php(919): CodeIgniter\Database\BaseBuilder->orderBy('judul', 'keterangan', 'tgl_dibuat', 'deskripsi', 'ASC')
+ 2 APPPATH\Models\Profil_Model.php(16): CodeIgniter\Model->__call('orderBy', [...])
+ 3 APPPATH\Controllers\Profil.php(19): App\Models\Profil_Model->getprofil()
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Profil->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profil))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\SIMKOS\\public\\index.php')
+CRITICAL - 2024-05-31 15:10:32 --> TypeError: CodeIgniter\Database\BaseBuilder::orderBy(): Argument #3 ($escape) must be of type ?bool, string given, called in C:\xampp\htdocs\SIMKOS\system\Model.php on line 919
+[Method: GET, Route: profil]
+in SYSTEMPATH\Database\BaseBuilder.php on line 1441.
+ 1 SYSTEMPATH\Model.php(919): CodeIgniter\Database\BaseBuilder->orderBy('judul', 'keterangan', 'tgl_dibuat', 'deskripsi', 'ASC')
+ 2 APPPATH\Models\Profil_Model.php(16): CodeIgniter\Model->__call('orderBy', [...])
+ 3 APPPATH\Controllers\Profil.php(19): App\Models\Profil_Model->getprofil()
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Profil->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profil))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\SIMKOS\\public\\index.php')
+CRITICAL - 2024-05-31 15:12:28 --> TypeError: CodeIgniter\Database\BaseBuilder::orderBy(): Argument #3 ($escape) must be of type ?bool, string given, called in C:\xampp\htdocs\SIMKOS\system\Model.php on line 919
+[Method: GET, Route: profil]
+in SYSTEMPATH\Database\BaseBuilder.php on line 1441.
+ 1 SYSTEMPATH\Model.php(919): CodeIgniter\Database\BaseBuilder->orderBy('judul', 'keterangan', 'tgl_dibuat', 'deskripsi', 'ASC')
+ 2 APPPATH\Models\Profil_Model.php(16): CodeIgniter\Model->__call('orderBy', [...])
+ 3 APPPATH\Controllers\Profil.php(19): App\Models\Profil_Model->getprofil()
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Profil->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profil))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\SIMKOS\\public\\index.php')
+CRITICAL - 2024-05-31 15:13:44 --> TypeError: CodeIgniter\Database\BaseBuilder::orderBy(): Argument #3 ($escape) must be of type ?bool, string given, called in C:\xampp\htdocs\SIMKOS\system\Model.php on line 919
+[Method: GET, Route: profil]
+in SYSTEMPATH\Database\BaseBuilder.php on line 1441.
+ 1 SYSTEMPATH\Model.php(919): CodeIgniter\Database\BaseBuilder->orderBy('judul', 'keterangan', 'tgl_dibuat', 'deskripsi', 'ASC')
+ 2 APPPATH\Models\Profil_Model.php(16): CodeIgniter\Model->__call('orderBy', [...])
+ 3 APPPATH\Controllers\Profil.php(19): App\Models\Profil_Model->getprofil()
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Profil->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profil))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\SIMKOS\\public\\index.php')
+ERROR - 2024-05-31 15:15:21 --> mysqli_sql_exception: Unknown column 'created_at' in 'order clause' in C:\xampp\htdocs\SIMKOS\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\xampp\htdocs\SIMKOS\system\Database\MySQLi\Connection.php(308): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\SIMKOS\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\SIMKOS\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\SIMKOS\system\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\SIMKOS\system\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\SIMKOS\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\SIMKOS\app\Models\Profil_Model.php(16): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\SIMKOS\app\Controllers\Profil.php(19): App\Models\Profil_Model->getprofil()
+#8 C:\xampp\htdocs\SIMKOS\system\CodeIgniter.php(933): App\Controllers\Profil->index()
+#9 C:\xampp\htdocs\SIMKOS\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profil))
+#10 C:\xampp\htdocs\SIMKOS\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\SIMKOS\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\SIMKOS\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\SIMKOS\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\xampp\htdocs\SIMKOS\system\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+CRITICAL - 2024-05-31 15:15:21 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'created_at' in 'order clause'
+[Method: GET, Route: profil]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `profil`
+ORDER BY `created_at` ASC', [], false)
+ 2 SYSTEMPATH\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\Profil_Model.php(16): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\Profil.php(19): App\Models\Profil_Model->getprofil()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Profil->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profil))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\SIMKOS\\public\\index.php')
+CRITICAL - 2024-05-31 15:15:21 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'created_at' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 313.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `profil`
+ORDER BY `created_at` ASC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `profil`
+ORDER BY `created_at` ASC')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `profil`
+ORDER BY `created_at` ASC', [], false)
+ 4 SYSTEMPATH\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Models\Profil_Model.php(16): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH\Controllers\Profil.php(19): App\Models\Profil_Model->getprofil()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Profil->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profil))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\SIMKOS\\public\\index.php')
+CRITICAL - 2024-05-31 15:15:21 --> [Caused by] mysqli_sql_exception: Unknown column 'created_at' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 308.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(308): mysqli->query('SELECT *
+FROM `profil`
+ORDER BY `created_at` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `profil`
+ORDER BY `created_at` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `profil`
+ORDER BY `created_at` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `profil`
+ORDER BY `created_at` ASC', [], false)
+ 5 SYSTEMPATH\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\Profil_Model.php(16): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\Profil.php(19): App\Models\Profil_Model->getprofil()
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Profil->index()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profil))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\SIMKOS\\public\\index.php')
+CRITICAL - 2024-05-31 15:15:39 --> TypeError: CodeIgniter\Database\BaseBuilder::orderBy(): Argument #3 ($escape) must be of type ?bool, string given, called in C:\xampp\htdocs\SIMKOS\system\Model.php on line 919
+[Method: GET, Route: profil]
+in SYSTEMPATH\Database\BaseBuilder.php on line 1441.
+ 1 SYSTEMPATH\Model.php(919): CodeIgniter\Database\BaseBuilder->orderBy('judul', 'keterangan', 'tgl_dibuat', 'deskripsi', 'ASC')
+ 2 APPPATH\Models\Profil_Model.php(16): CodeIgniter\Model->__call('orderBy', [...])
+ 3 APPPATH\Controllers\Profil.php(19): App\Models\Profil_Model->getprofil()
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Profil->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profil))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\SIMKOS\\public\\index.php')
+CRITICAL - 2024-05-31 15:19:52 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "profilView.php"
+[Method: GET, Route: profil]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('profilView.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('profilView', [], true)
+ 3 APPPATH\Controllers\Profil.php(24): view('profilView', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Profil->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profil))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\SIMKOS\\public\\index.php')
+CRITICAL - 2024-05-31 15:19:54 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "profilView.php"
+[Method: GET, Route: profil]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('profilView.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('profilView', [], true)
+ 3 APPPATH\Controllers\Profil.php(24): view('profilView', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Profil->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profil))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\SIMKOS\\public\\index.php')
+CRITICAL - 2024-05-31 15:21:23 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "profilView.php"
+[Method: GET, Route: profil]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('profilView.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('profilView', [], true)
+ 3 APPPATH\Controllers\Profil.php(24): view('profilView', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Profil->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profil))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\SIMKOS\\public\\index.php')
+CRITICAL - 2024-05-31 15:22:03 --> ParseError: syntax error, unexpected token "[", expecting "("
+[Method: GET, Route: profil]
+in APPPATH\Controllers\Profil.php on line 20.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\SIMKOS\\app\\Controllers\\Profil.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Profil')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Profil')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\Profil', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\SIMKOS\\public\\index.php')
+CRITICAL - 2024-05-31 15:22:34 --> ParseError: syntax error, unexpected token "=>", expecting "]"
+[Method: GET, Route: profil]
+in APPPATH\Controllers\Profil.php on line 21.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\SIMKOS\\app\\Controllers\\Profil.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Profil')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Profil')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\Profil', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\SIMKOS\\public\\index.php')
+CRITICAL - 2024-05-31 15:22:57 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "profilView.php"
+[Method: GET, Route: profil]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('profilView.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('profilView', [], true)
+ 3 APPPATH\Controllers\Profil.php(24): view('profilView', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Profil->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profil))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\SIMKOS\\public\\index.php')
+CRITICAL - 2024-05-31 15:25:55 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "profil_view.php"
+[Method: GET, Route: profil]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('profil_view.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('profil_view', [], true)
+ 3 APPPATH\Controllers\Profil.php(25): view('profil_view', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Profil->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profil))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\SIMKOS\\public\\index.php')
+CRITICAL - 2024-05-31 15:25:57 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "profil_view.php"
+[Method: GET, Route: profil]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('profil_view.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('profil_view', [], true)
+ 3 APPPATH\Controllers\Profil.php(25): view('profil_view', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Profil->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profil))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\SIMKOS\\public\\index.php')
+CRITICAL - 2024-05-31 15:28:37 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "profil_view.php"
+[Method: GET, Route: profil]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('profil_view.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('profil_view', [], true)
+ 3 APPPATH\Controllers\Profil.php(25): view('profil_view', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Profil->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profil))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\SIMKOS\\public\\index.php')
+CRITICAL - 2024-05-31 15:29:15 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "profil_view.php"
+[Method: GET, Route: profil]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('profil_view.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('profil_view', [], true)
+ 3 APPPATH\Controllers\Profil.php(25): view('profil_view', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Profil->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profil))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\SIMKOS\\public\\index.php')
+CRITICAL - 2024-05-31 15:29:17 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "profil_view.php"
+[Method: GET, Route: profil]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('profil_view.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('profil_view', [], true)
+ 3 APPPATH\Controllers\Profil.php(25): view('profil_view', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Profil->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profil))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\SIMKOS\\public\\index.php')
+CRITICAL - 2024-05-31 15:33:33 --> Error: Call to undefined function App\Controllers\views()
+[Method: GET, Route: profil]
+in APPPATH\Controllers\Profil.php on line 25.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Profil->index()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profil))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\SIMKOS\\public\\index.php')
+CRITICAL - 2024-05-31 15:34:14 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "backendadmin/profil_view.php"
+[Method: GET, Route: profil]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('backendadmin/profil_view.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('backendadmin/profil_view', [], true)
+ 3 APPPATH\Controllers\Profil.php(25): view('backendadmin/profil_view', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Profil->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profil))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\SIMKOS\\public\\index.php')
+CRITICAL - 2024-05-31 15:36:38 --> Exception: File profil_view.php tidak ditemukan di direktori C:\xampp\htdocs\SIMKOS\app\Views/backendadmin/profil_view.php
+[Method: GET, Route: profil]
+in APPPATH\Controllers\Profil.php on line 27.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Profil->index()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profil))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\SIMKOS\\public\\index.php')
+CRITICAL - 2024-05-31 15:55:44 --> ErrorException: Undefined array key "id"
+[Method: GET, Route: profil]
+in APPPATH\Views\backendadmin\profil_view.php on line 42.
+ 1 APPPATH\Views\backendadmin\profil_view.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\xampp\\htdocs\\SIMKOS\\app\\Views\\backendadmin\\profil_view.php', 42)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\SIMKOS\\app\\Views\\backendadmin\\profil_view.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('backendadmin/profil_view', [], true)
+ 5 APPPATH\Controllers\Profil.php(23): view('backendadmin/profil_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Profil->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profil))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\SIMKOS\\public\\index.php')
