@@ -92,7 +92,7 @@
                                             </button>
                                         </div>
                                         <div class="modal-body">
-                                            <form>
+                                            <>
                                                 <div class="mb-3">
                                                     <label for="exampleInputPassword1" class="form-label">Edit Detail
                                                         Property</label>
@@ -100,25 +100,26 @@
                                                         class="form-control" id="exampleInputPassword1">
                                                 </div>
                                                 <div class="mb-3">
-                                                    <label for="exampleInputPassword1" class="form-label">Edit Foto
-                                                        Detail
+                                                    <label for="exampleInputPassword1" class="form-label">Edit Foto Detail
                                                         Property</label>
                                                     <input type="file" placeholder="Masukkan Foto Detail Property"
                                                         class="form-control" id="exampleInputPassword1">
                                                 </div>
                                                 <div class="mb-3">
                                                     <label for="exampleInputPassword1" class="form-label">Edit Deskripsi
-                                                        Detail
-                                                        Property</label>
-                                                    <input type="text" placeholder="Masukkan Deskripsi Detail Property"
+                                                        Detail Property</label>
+                                                    <input type="text" name="id_detail_property"
+                                                    value="<?= $data['id_detail_property'] ?>"
+                                                    placeholder="Masukkan Deskripsi Detail Property"
                                                         class="form-control" id="exampleInputPassword1">
                                                 </div>
-                                            </form>
                                         </div>
                                         <div class="modal-footer">
+                                            <input type="hidden" name="id_detail_property"
+                                                value="<?= $data['id_detail_property'] ?>">
                                             <button type="button" class="btn btn-secondary"
                                                 data-dismiss="modal">Close</button>
-                                            <button type="button" class="btn btn-primary">Simpan Data</button>
+                                            <button type="submit" class="btn btn-primary">Simpan Data</button>
                                         </div>
                                     </div>
                                 </div>

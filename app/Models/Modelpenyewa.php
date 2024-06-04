@@ -18,7 +18,7 @@ class Modelpenyewa extends Model
     protected bool $updateOnlyChanged = true;
 
     protected array $casts = [];
-    protected array $castHandlers = [];
+    protected array $castHandlers = ["nama_detail_property"];
 
     // Dates
     protected $useTimestamps = false;

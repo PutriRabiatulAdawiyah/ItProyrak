@@ -86,7 +86,7 @@
             <div class="row justify-content-center align-items-center">
                 <div class="col-lg-9 text-center mt-5">
                     <h1 class="heading" data-aos="fade-up">
-                        5232 California AVE. 21BC
+                        KOS IBU DWIYANTI PELAIHARI
                     </h1>
 
                     <nav aria-label="breadcrumb" data-aos="fade-up" data-aos-delay="200">
@@ -96,7 +96,7 @@
                                 <a href="properties.html">Properties</a>
                             </li>
                             <li class="breadcrumb-item active text-white-50" aria-current="page">
-                                5232 California AVE. 21BC
+                            <a href="properties.html">Detail Properties</a>
                             </li>
                         </ol>
                     </nav>
@@ -118,18 +118,13 @@
                     </div>
                 </div>
                 <div class="col-lg-4">
-                    <h2 class="heading text-primary">5232 California Ave. 21BC</h2>
-                    <p class="meta">California, United States</p>
+                    <h2 class="heading text-primary">Kost A</h2>
+                    <p class="meta">Kost A Memiliki satu ruang yang dapat di isi 1 sampai 4 orang</p>
                     <p class="text-black-50">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione
-                        laborum quo quos omnis sed magnam id, ducimus saepe, debitis error
-                        earum, iste dicta odio est sint dolorem magni animi tenetur.
+                        Tersedia 1 Kamar mandi dalam, 1 meja, dan 2 Kursi
                     </p>
                     <p class="text-black-50">
-                        Perferendis eligendi reprehenderit, assumenda molestias nisi eius
-                        iste reiciendis porro tenetur in, repudiandae amet libero.
-                        Doloremque, reprehenderit cupiditate error laudantium qui, esse
-                        quam debitis, eum cumque perferendis, illum harum expedita.
+                        Anda bisa mendapatkan hunian sementara dengan fasilitas yang lengkap, tempat yang strategis aman, dan nyaman dengan harga terjangkau
                     </p>
                     <a href="/sewaproperties" class="btn btn-danger py-2 px-3">Sewa Sekarang!</a>
                     <div class="d-block agent-box p-5">
@@ -137,11 +132,10 @@
                             <img src="/freeuser/images/person_2-min.jpg" alt="Image" class="img-fluid" />
                         </div>
                         <div class="text">
-                            <h3 class="mb-0">Alicia Huston</h3>
-                            <div class="meta mb-3">Real Estate</div>
+                            <h3 class="mb-0">Dwiyanti</h3>
+                            <div class="meta mb-3">Pemilik Kost</div>
                             <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Ratione laborum quo quos omnis sed magnam id ducimus saepe
+                                No Telephone : +6281-2345-7890
                             </p>
                             <ul class="list-unstyled social dark-hover d-flex">
                                 <li class="me-1">

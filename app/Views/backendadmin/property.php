@@ -57,8 +57,6 @@
                             </div>
                         </div>
                     </div>
-
-
                     <table class="table table-bordered table-head-bg-info table-bordered-bd-info mt-4">
                         <thead>
                             <tr>

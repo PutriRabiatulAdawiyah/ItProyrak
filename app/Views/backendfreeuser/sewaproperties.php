@@ -86,7 +86,7 @@
             <div class="row justify-content-center align-items-center">
                 <div class="col-lg-9 text-center mt-5">
                     <h1 class="heading" data-aos="fade-up">
-                        5232 California AVE. 21BC
+                        KOS IBU DWIYANTI PELAIHARI  
                     </h1>
 
                     <nav aria-label="breadcrumb" data-aos="fade-up" data-aos-delay="200">
@@ -96,7 +96,7 @@
                                 <a href="properties.html">Properties</a>
                             </li>
                             <li class="breadcrumb-item active text-white-50" aria-current="page">
-                                5232 California AVE. 21BC
+                                Sewa
                             </li>
                         </ol>
                     </nav>
