@@ -1,0 +1,1833 @@
+INFO - 2024-06-08 06:10:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-06-08 06:13:18 --> mysqli_sql_exception: Table 'it_proyek1.detail_properties' doesn't exist in C:\xampp\htdocs\SIMKOS\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\xampp\htdocs\SIMKOS\system\Database\MySQLi\Connection.php(308): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\SIMKOS\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\SIMKOS\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\SIMKOS\system\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\SIMKOS\system\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\SIMKOS\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\SIMKOS\app\Controllers\DetailProperty.php(12): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\SIMKOS\system\CodeIgniter.php(933): App\Controllers\DetailProperty->index()
+#8 C:\xampp\htdocs\SIMKOS\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailProperty))
+#9 C:\xampp\htdocs\SIMKOS\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\SIMKOS\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\SIMKOS\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\SIMKOS\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\xampp\htdocs\SIMKOS\system\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2024-06-08 06:13:18 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'it_proyek1.detail_properties' doesn't exist
+[Method: GET, Route: detailproperty]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `detail_properties`', [], false)
+ 2 SYSTEMPATH\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\DetailProperty.php(12): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DetailProperty->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailProperty))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\SIMKOS\\public\\index.php')
+CRITICAL - 2024-06-08 06:13:18 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'it_proyek1.detail_properties' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 313.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `detail_properties`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `detail_properties`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `detail_properties`', [], false)
+ 4 SYSTEMPATH\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\DetailProperty.php(12): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DetailProperty->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailProperty))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\SIMKOS\\public\\index.php')
+CRITICAL - 2024-06-08 06:13:18 --> [Caused by] mysqli_sql_exception: Table 'it_proyek1.detail_properties' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 308.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(308): mysqli->query('SELECT *
+FROM `detail_properties`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `detail_properties`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `detail_properties`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `detail_properties`', [], false)
+ 5 SYSTEMPATH\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\DetailProperty.php(12): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DetailProperty->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailProperty))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\SIMKOS\\public\\index.php')
+ERROR - 2024-06-08 06:23:27 --> mysqli_sql_exception: Table 'it_proyek1.detail_properties' doesn't exist in C:\xampp\htdocs\SIMKOS\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\xampp\htdocs\SIMKOS\system\Database\MySQLi\Connection.php(308): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\SIMKOS\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\SIMKOS\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\SIMKOS\system\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\SIMKOS\system\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\SIMKOS\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\SIMKOS\app\Controllers\DetailProperty.php(12): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\SIMKOS\system\CodeIgniter.php(933): App\Controllers\DetailProperty->index()
+#8 C:\xampp\htdocs\SIMKOS\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailProperty))
+#9 C:\xampp\htdocs\SIMKOS\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\SIMKOS\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\SIMKOS\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\SIMKOS\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\xampp\htdocs\SIMKOS\system\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2024-06-08 06:23:27 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'it_proyek1.detail_properties' doesn't exist
+[Method: GET, Route: detailproperty]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `detail_properties`', [], false)
+ 2 SYSTEMPATH\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\DetailProperty.php(12): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DetailProperty->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailProperty))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\SIMKOS\\public\\index.php')
+CRITICAL - 2024-06-08 06:23:27 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'it_proyek1.detail_properties' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 313.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `detail_properties`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `detail_properties`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `detail_properties`', [], false)
+ 4 SYSTEMPATH\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\DetailProperty.php(12): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DetailProperty->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailProperty))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\SIMKOS\\public\\index.php')
+CRITICAL - 2024-06-08 06:23:27 --> [Caused by] mysqli_sql_exception: Table 'it_proyek1.detail_properties' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 308.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(308): mysqli->query('SELECT *
+FROM `detail_properties`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `detail_properties`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `detail_properties`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `detail_properties`', [], false)
+ 5 SYSTEMPATH\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\DetailProperty.php(12): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DetailProperty->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailProperty))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\SIMKOS\\public\\index.php')
+ERROR - 2024-06-08 06:24:34 --> mysqli_sql_exception: Table 'it_proyek1.detail_properties' doesn't exist in C:\xampp\htdocs\SIMKOS\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\xampp\htdocs\SIMKOS\system\Database\MySQLi\Connection.php(308): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\SIMKOS\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\SIMKOS\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\SIMKOS\system\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\SIMKOS\system\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\SIMKOS\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\SIMKOS\app\Controllers\DetailProperty.php(12): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\SIMKOS\system\CodeIgniter.php(933): App\Controllers\DetailProperty->index()
+#8 C:\xampp\htdocs\SIMKOS\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailProperty))
+#9 C:\xampp\htdocs\SIMKOS\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\SIMKOS\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\SIMKOS\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\SIMKOS\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\xampp\htdocs\SIMKOS\system\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2024-06-08 06:24:34 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'it_proyek1.detail_properties' doesn't exist
+[Method: GET, Route: detailproperty]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `detail_properties`', [], false)
+ 2 SYSTEMPATH\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\DetailProperty.php(12): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DetailProperty->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailProperty))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\SIMKOS\\public\\index.php')
+CRITICAL - 2024-06-08 06:24:34 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'it_proyek1.detail_properties' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 313.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `detail_properties`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `detail_properties`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `detail_properties`', [], false)
+ 4 SYSTEMPATH\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\DetailProperty.php(12): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DetailProperty->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailProperty))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\SIMKOS\\public\\index.php')
+CRITICAL - 2024-06-08 06:24:34 --> [Caused by] mysqli_sql_exception: Table 'it_proyek1.detail_properties' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 308.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(308): mysqli->query('SELECT *
+FROM `detail_properties`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `detail_properties`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `detail_properties`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `detail_properties`', [], false)
+ 5 SYSTEMPATH\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\DetailProperty.php(12): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DetailProperty->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailProperty))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\SIMKOS\\public\\index.php')
+INFO - 2024-06-08 06:27:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-08 06:27:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-08 06:27:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-08 06:27:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-08 06:28:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-06-08 06:32:14 --> mysqli_sql_exception: Table 'it_proyek1.detail_properties' doesn't exist in C:\xampp\htdocs\SIMKOS\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\xampp\htdocs\SIMKOS\system\Database\MySQLi\Connection.php(308): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\SIMKOS\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\SIMKOS\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\SIMKOS\system\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\SIMKOS\system\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\SIMKOS\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\SIMKOS\app\Controllers\DetailProperty.php(12): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\SIMKOS\system\CodeIgniter.php(933): App\Controllers\DetailProperty->index()
+#8 C:\xampp\htdocs\SIMKOS\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailProperty))
+#9 C:\xampp\htdocs\SIMKOS\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\SIMKOS\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\SIMKOS\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\SIMKOS\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\xampp\htdocs\SIMKOS\system\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2024-06-08 06:32:14 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'it_proyek1.detail_properties' doesn't exist
+[Method: GET, Route: detailproperty]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `detail_properties`', [], false)
+ 2 SYSTEMPATH\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\DetailProperty.php(12): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DetailProperty->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailProperty))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\SIMKOS\\public\\index.php')
+CRITICAL - 2024-06-08 06:32:14 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'it_proyek1.detail_properties' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 313.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `detail_properties`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `detail_properties`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `detail_properties`', [], false)
+ 4 SYSTEMPATH\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\DetailProperty.php(12): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DetailProperty->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailProperty))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\SIMKOS\\public\\index.php')
+CRITICAL - 2024-06-08 06:32:14 --> [Caused by] mysqli_sql_exception: Table 'it_proyek1.detail_properties' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 308.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(308): mysqli->query('SELECT *
+FROM `detail_properties`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `detail_properties`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `detail_properties`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `detail_properties`', [], false)
+ 5 SYSTEMPATH\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\DetailProperty.php(12): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DetailProperty->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailProperty))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\SIMKOS\\public\\index.php')
+ERROR - 2024-06-08 06:35:13 --> mysqli_sql_exception: Table 'it_proyek1.detail_properties' doesn't exist in C:\xampp\htdocs\SIMKOS\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\xampp\htdocs\SIMKOS\system\Database\MySQLi\Connection.php(308): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\SIMKOS\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\SIMKOS\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\SIMKOS\system\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\SIMKOS\system\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\SIMKOS\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\SIMKOS\app\Controllers\DetailProperty.php(12): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\SIMKOS\system\CodeIgniter.php(933): App\Controllers\DetailProperty->index()
+#8 C:\xampp\htdocs\SIMKOS\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailProperty))
+#9 C:\xampp\htdocs\SIMKOS\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\SIMKOS\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\SIMKOS\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\SIMKOS\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\xampp\htdocs\SIMKOS\system\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2024-06-08 06:35:13 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'it_proyek1.detail_properties' doesn't exist
+[Method: GET, Route: detailproperty]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `detail_properties`', [], false)
+ 2 SYSTEMPATH\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\DetailProperty.php(12): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DetailProperty->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailProperty))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\SIMKOS\\public\\index.php')
+CRITICAL - 2024-06-08 06:35:13 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'it_proyek1.detail_properties' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 313.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `detail_properties`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `detail_properties`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `detail_properties`', [], false)
+ 4 SYSTEMPATH\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\DetailProperty.php(12): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DetailProperty->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailProperty))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\SIMKOS\\public\\index.php')
+CRITICAL - 2024-06-08 06:35:13 --> [Caused by] mysqli_sql_exception: Table 'it_proyek1.detail_properties' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 308.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(308): mysqli->query('SELECT *
+FROM `detail_properties`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `detail_properties`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `detail_properties`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1629): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `detail_properties`', [], false)
+ 5 SYSTEMPATH\Model.php(275): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\DetailProperty.php(12): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DetailProperty->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailProperty))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\SIMKOS\\public\\index.php')
+CRITICAL - 2024-06-08 06:35:47 --> ErrorException: Undefined variable $data
+[Method: GET, Route: detailproperty]
+in APPPATH\Views\backendadmin\detailproperty.php on line 119.
+ 1 APPPATH\Views\backendadmin\detailproperty.php(119): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\xampp\\htdocs\\SIMKOS\\app\\Views\\backendadmin\\detailproperty.php', 119)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\SIMKOS\\app\\Views\\backendadmin\\detailproperty.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('backendadmin/detailproperty', [], true)
+ 5 APPPATH\Controllers\DetailProperty.php(12): view('backendadmin/detailproperty', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DetailProperty->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailProperty))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\SIMKOS\\public\\index.php')
+INFO - 2024-06-08 06:36:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-08 06:36:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-08 06:38:27 --> CodeIgniter\Database\Exceptions\DatabaseException: Deletes are not allowed unless they contain a "where" or "like" clause.
+[Method: POST, Route: property/hapus]
+in SYSTEMPATH\Database\BaseBuilder.php on line 2794.
+ 1 SYSTEMPATH\Model.php(510): CodeIgniter\Database\BaseBuilder->delete()
+ 2 SYSTEMPATH\BaseModel.php(1158): CodeIgniter\Model->doDelete('0', false)
+ 3 APPPATH\Controllers\Property.php(18): CodeIgniter\BaseModel->delete('0')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Property->hapus()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Property))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\SIMKOS\\public\\index.php')
+ERROR - 2024-06-08 07:05:51 --> mysqli_sql_exception: Column 'harga_property' cannot be null in C:\xampp\htdocs\SIMKOS\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\xampp\htdocs\SIMKOS\system\Database\MySQLi\Connection.php(308): mysqli->query('INSERT INTO `pr...', 0)
+#1 C:\xampp\htdocs\SIMKOS\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 C:\xampp\htdocs\SIMKOS\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 C:\xampp\htdocs\SIMKOS\system\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 C:\xampp\htdocs\SIMKOS\system\Model.php(383): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\SIMKOS\system\BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\SIMKOS\system\Model.php(791): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\SIMKOS\app\Controllers\Property.php(47): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\SIMKOS\system\CodeIgniter.php(933): App\Controllers\Property->tambah()
+#9 C:\xampp\htdocs\SIMKOS\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Property))
+#10 C:\xampp\htdocs\SIMKOS\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\SIMKOS\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\SIMKOS\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\SIMKOS\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\xampp\htdocs\SIMKOS\system\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+CRITICAL - 2024-06-08 07:05:51 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'harga_property' cannot be null
+[Method: POST, Route: property/tambah]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `property` (`nama_property`, `harga_property`, `status_property`) VALUES (:nama_property:, :harga_property:, :status_property:)', [...], false)
+ 2 SYSTEMPATH\Model.php(383): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(791): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Property.php(47): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Property->tambah()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Property))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\SIMKOS\\public\\index.php')
+CRITICAL - 2024-06-08 07:05:51 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'harga_property' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 313.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `property` (`nama_property`, `harga_property`, `status_property`) VALUES (\'ssss\', NULL, \'sjks\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `property` (`nama_property`, `harga_property`, `status_property`) VALUES (\'ssss\', NULL, \'sjks\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `property` (`nama_property`, `harga_property`, `status_property`) VALUES (:nama_property:, :harga_property:, :status_property:)', [...], false)
+ 4 SYSTEMPATH\Model.php(383): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(791): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\Property.php(47): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Property->tambah()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Property))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\SIMKOS\\public\\index.php')
+CRITICAL - 2024-06-08 07:05:51 --> [Caused by] mysqli_sql_exception: Column 'harga_property' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 308.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(308): mysqli->query('INSERT INTO `property` (`nama_property`, `harga_property`, `status_property`) VALUES (\'ssss\', NULL, \'sjks\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `property` (`nama_property`, `harga_property`, `status_property`) VALUES (\'ssss\', NULL, \'sjks\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `property` (`nama_property`, `harga_property`, `status_property`) VALUES (\'ssss\', NULL, \'sjks\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `property` (`nama_property`, `harga_property`, `status_property`) VALUES (:nama_property:, :harga_property:, :status_property:)', [...], false)
+ 5 SYSTEMPATH\Model.php(383): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(791): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Property.php(47): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Property->tambah()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Property))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\SIMKOS\\public\\index.php')
+ERROR - 2024-06-08 07:06:08 --> mysqli_sql_exception: Column 'harga_property' cannot be null in C:\xampp\htdocs\SIMKOS\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\xampp\htdocs\SIMKOS\system\Database\MySQLi\Connection.php(308): mysqli->query('INSERT INTO `pr...', 0)
+#1 C:\xampp\htdocs\SIMKOS\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 C:\xampp\htdocs\SIMKOS\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 C:\xampp\htdocs\SIMKOS\system\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 C:\xampp\htdocs\SIMKOS\system\Model.php(383): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\SIMKOS\system\BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\SIMKOS\system\Model.php(791): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\SIMKOS\app\Controllers\Property.php(47): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\SIMKOS\system\CodeIgniter.php(933): App\Controllers\Property->tambah()
+#9 C:\xampp\htdocs\SIMKOS\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Property))
+#10 C:\xampp\htdocs\SIMKOS\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\SIMKOS\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\SIMKOS\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\SIMKOS\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\xampp\htdocs\SIMKOS\system\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+CRITICAL - 2024-06-08 07:06:08 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'harga_property' cannot be null
+[Method: POST, Route: property/tambah]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `property` (`nama_property`, `harga_property`, `status_property`) VALUES (:nama_property:, :harga_property:, :status_property:)', [...], false)
+ 2 SYSTEMPATH\Model.php(383): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(791): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Property.php(47): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Property->tambah()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Property))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\SIMKOS\\public\\index.php')
+CRITICAL - 2024-06-08 07:06:08 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'harga_property' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 313.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `property` (`nama_property`, `harga_property`, `status_property`) VALUES (\'ssss\', NULL, \'sjks\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `property` (`nama_property`, `harga_property`, `status_property`) VALUES (\'ssss\', NULL, \'sjks\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `property` (`nama_property`, `harga_property`, `status_property`) VALUES (:nama_property:, :harga_property:, :status_property:)', [...], false)
+ 4 SYSTEMPATH\Model.php(383): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(791): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\Property.php(47): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Property->tambah()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Property))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\SIMKOS\\public\\index.php')
+CRITICAL - 2024-06-08 07:06:08 --> [Caused by] mysqli_sql_exception: Column 'harga_property' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 308.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(308): mysqli->query('INSERT INTO `property` (`nama_property`, `harga_property`, `status_property`) VALUES (\'ssss\', NULL, \'sjks\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `property` (`nama_property`, `harga_property`, `status_property`) VALUES (\'ssss\', NULL, \'sjks\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `property` (`nama_property`, `harga_property`, `status_property`) VALUES (\'ssss\', NULL, \'sjks\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `property` (`nama_property`, `harga_property`, `status_property`) VALUES (:nama_property:, :harga_property:, :status_property:)', [...], false)
+ 5 SYSTEMPATH\Model.php(383): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(791): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Property.php(47): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Property->tambah()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Property))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\SIMKOS\\public\\index.php')
+INFO - 2024-06-08 07:23:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-08 07:28:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-08 07:34:47 --> ParseError: syntax error, unexpected variable "$namaGambar"
+[Method: GET, Route: detailproperty]
+in APPPATH\Controllers\DetailProperty.php on line 43.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\SIMKOS\\app\\Controllers\\DetailProperty.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\DetailProperty')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\DetailProperty')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\DetailProperty', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\SIMKOS\\public\\index.php')
+CRITICAL - 2024-06-08 07:38:10 --> ParseError: syntax error, unexpected variable "$namaGambar"
+[Method: GET, Route: detailproperty]
+in APPPATH\Controllers\DetailProperty.php on line 43.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\SIMKOS\\app\\Controllers\\DetailProperty.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\DetailProperty')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\DetailProperty')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\DetailProperty', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\SIMKOS\\public\\index.php')
+CRITICAL - 2024-06-08 07:38:13 --> ParseError: syntax error, unexpected variable "$namaGambar"
+[Method: GET, Route: detailproperty]
+in APPPATH\Controllers\DetailProperty.php on line 43.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\SIMKOS\\app\\Controllers\\DetailProperty.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\DetailProperty')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\DetailProperty')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\DetailProperty', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\SIMKOS\\public\\index.php')
+CRITICAL - 2024-06-08 07:38:15 --> ParseError: syntax error, unexpected variable "$namaGambar"
+[Method: GET, Route: detailproperty]
+in APPPATH\Controllers\DetailProperty.php on line 43.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\SIMKOS\\app\\Controllers\\DetailProperty.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\DetailProperty')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\DetailProperty')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\DetailProperty', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\SIMKOS\\public\\index.php')
+CRITICAL - 2024-06-08 07:38:58 --> ParseError: syntax error, unexpected variable "$namaGambar"
+[Method: GET, Route: detailproperty]
+in APPPATH\Controllers\DetailProperty.php on line 43.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\SIMKOS\\app\\Controllers\\DetailProperty.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\DetailProperty')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\DetailProperty')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\DetailProperty', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\SIMKOS\\public\\index.php')
+CRITICAL - 2024-06-08 07:39:30 --> ParseError: syntax error, unexpected variable "$data"
+[Method: GET, Route: detailproperty]
+in APPPATH\Controllers\DetailProperty.php on line 46.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\SIMKOS\\app\\Controllers\\DetailProperty.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\DetailProperty')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\DetailProperty')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\DetailProperty', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\SIMKOS\\public\\index.php')
+CRITICAL - 2024-06-08 07:40:59 --> ParseError: syntax error, unexpected variable "$data"
+[Method: GET, Route: detailproperty]
+in APPPATH\Controllers\DetailProperty.php on line 46.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\SIMKOS\\app\\Controllers\\DetailProperty.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\DetailProperty')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\DetailProperty')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\DetailProperty', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\SIMKOS\\public\\index.php')
+CRITICAL - 2024-06-08 07:53:10 --> Error: Call to a member function getRandomName() on null
+[Method: POST, Route: property/tambah]
+in APPPATH\Controllers\Property.php on line 43.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Property->tambah()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Property))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\SIMKOS\\public\\index.php')
+CRITICAL - 2024-06-08 07:55:51 --> Error: Call to a member function getRandomName() on null
+[Method: POST, Route: property/tambah]
+in APPPATH\Controllers\Property.php on line 43.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Property->tambah()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Property))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\SIMKOS\\public\\index.php')
+CRITICAL - 2024-06-08 07:55:53 --> ParseError: syntax error, unexpected variable "$namaGambar"
+[Method: GET, Route: detailproperty]
+in APPPATH\Controllers\DetailProperty.php on line 43.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\SIMKOS\\app\\Controllers\\DetailProperty.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\DetailProperty')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\DetailProperty')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\DetailProperty', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\SIMKOS\\public\\index.php')
+CRITICAL - 2024-06-08 07:57:16 --> ParseError: syntax error, unexpected variable "$namaGambar"
+[Method: GET, Route: detailproperty]
+in APPPATH\Controllers\DetailProperty.php on line 43.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\SIMKOS\\app\\Controllers\\DetailProperty.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\DetailProperty')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\DetailProperty')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\DetailProperty', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\SIMKOS\\public\\index.php')
+CRITICAL - 2024-06-08 07:57:18 --> ParseError: syntax error, unexpected variable "$namaGambar"
+[Method: GET, Route: detailproperty]
+in APPPATH\Controllers\DetailProperty.php on line 43.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\SIMKOS\\app\\Controllers\\DetailProperty.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\DetailProperty')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\DetailProperty')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\DetailProperty', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\SIMKOS\\public\\index.php')
+CRITICAL - 2024-06-08 07:57:19 --> ParseError: syntax error, unexpected variable "$namaGambar"
+[Method: GET, Route: detailproperty]
+in APPPATH\Controllers\DetailProperty.php on line 43.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\SIMKOS\\app\\Controllers\\DetailProperty.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\DetailProperty')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\DetailProperty')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\DetailProperty', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\SIMKOS\\public\\index.php')
+CRITICAL - 2024-06-08 07:58:49 --> ParseError: syntax error, unexpected variable "$namaGambar"
+[Method: GET, Route: detailproperty]
+in APPPATH\Controllers\DetailProperty.php on line 43.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\SIMKOS\\app\\Controllers\\DetailProperty.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\DetailProperty')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\DetailProperty')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\DetailProperty', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\SIMKOS\\public\\index.php')
+CRITICAL - 2024-06-08 07:58:49 --> ParseError: syntax error, unexpected variable "$namaGambar"
+[Method: GET, Route: detailproperty]
+in APPPATH\Controllers\DetailProperty.php on line 43.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\SIMKOS\\app\\Controllers\\DetailProperty.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\DetailProperty')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\DetailProperty')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\DetailProperty', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\SIMKOS\\public\\index.php')
+CRITICAL - 2024-06-08 07:58:49 --> ParseError: syntax error, unexpected variable "$namaGambar"
+[Method: GET, Route: detailproperty]
+in APPPATH\Controllers\DetailProperty.php on line 43.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\SIMKOS\\app\\Controllers\\DetailProperty.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\DetailProperty')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\DetailProperty')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\DetailProperty', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\SIMKOS\\public\\index.php')
+CRITICAL - 2024-06-08 08:00:51 --> ParseError: syntax error, unexpected variable "$data"
+[Method: GET, Route: detailproperty]
+in APPPATH\Controllers\DetailProperty.php on line 46.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\SIMKOS\\app\\Controllers\\DetailProperty.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\DetailProperty')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\DetailProperty')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\DetailProperty', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\SIMKOS\\public\\index.php')
+CRITICAL - 2024-06-08 08:01:22 --> ParseError: syntax error, unexpected variable "$data"
+[Method: GET, Route: detailproperty]
+in APPPATH\Controllers\DetailProperty.php on line 46.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\SIMKOS\\app\\Controllers\\DetailProperty.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\DetailProperty')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\DetailProperty')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\DetailProperty', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\SIMKOS\\public\\index.php')
+CRITICAL - 2024-06-08 08:02:22 --> ParseError: syntax error, unexpected variable "$data"
+[Method: GET, Route: detailproperty]
+in APPPATH\Controllers\DetailProperty.php on line 46.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\SIMKOS\\app\\Controllers\\DetailProperty.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\DetailProperty')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\DetailProperty')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\DetailProperty', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\SIMKOS\\public\\index.php')
+CRITICAL - 2024-06-08 08:02:26 --> ParseError: syntax error, unexpected variable "$data"
+[Method: GET, Route: detailproperty]
+in APPPATH\Controllers\DetailProperty.php on line 46.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\SIMKOS\\app\\Controllers\\DetailProperty.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\DetailProperty')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\DetailProperty')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\DetailProperty', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\SIMKOS\\public\\index.php')
+ERROR - 2024-06-08 08:09:49 --> mysqli_sql_exception: Unknown column 'foto_detail_property' in 'field list' in C:\xampp\htdocs\SIMKOS\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\xampp\htdocs\SIMKOS\system\Database\MySQLi\Connection.php(308): mysqli->query('INSERT INTO `de...', 0)
+#1 C:\xampp\htdocs\SIMKOS\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `de...')
+#2 C:\xampp\htdocs\SIMKOS\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `de...')
+#3 C:\xampp\htdocs\SIMKOS\system\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `de...', Array, false)
+#4 C:\xampp\htdocs\SIMKOS\system\Model.php(383): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\SIMKOS\system\BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\SIMKOS\system\Model.php(791): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\SIMKOS\app\Controllers\DetailProperty.php(54): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\SIMKOS\system\CodeIgniter.php(933): App\Controllers\DetailProperty->tambah()
+#9 C:\xampp\htdocs\SIMKOS\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailProperty))
+#10 C:\xampp\htdocs\SIMKOS\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\SIMKOS\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\SIMKOS\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\SIMKOS\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\xampp\htdocs\SIMKOS\system\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+CRITICAL - 2024-06-08 08:09:49 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'foto_detail_property' in 'field list'
+[Method: POST, Route: detailproperty/tambah]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `detail_property` (`nama_detail_property`, `foto_detail_property`, `deskripsi_detail_property`) VALUES (:nama_detail_property:, :foto_detail_property:, :deskripsi_detail_property:)', [...], false)
+ 2 SYSTEMPATH\Model.php(383): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(791): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\DetailProperty.php(54): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DetailProperty->tambah()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailProperty))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\SIMKOS\\public\\index.php')
+CRITICAL - 2024-06-08 08:09:49 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'foto_detail_property' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 313.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `detail_property` (`nama_detail_property`, `foto_detail_property`, `deskripsi_detail_property`) VALUES (\'nmmmm\', NULL, NULL)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `detail_property` (`nama_detail_property`, `foto_detail_property`, `deskripsi_detail_property`) VALUES (\'nmmmm\', NULL, NULL)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `detail_property` (`nama_detail_property`, `foto_detail_property`, `deskripsi_detail_property`) VALUES (:nama_detail_property:, :foto_detail_property:, :deskripsi_detail_property:)', [...], false)
+ 4 SYSTEMPATH\Model.php(383): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(791): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\DetailProperty.php(54): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DetailProperty->tambah()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailProperty))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\SIMKOS\\public\\index.php')
+CRITICAL - 2024-06-08 08:09:49 --> [Caused by] mysqli_sql_exception: Unknown column 'foto_detail_property' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 308.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(308): mysqli->query('INSERT INTO `detail_property` (`nama_detail_property`, `foto_detail_property`, `deskripsi_detail_property`) VALUES (\'nmmmm\', NULL, NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `detail_property` (`nama_detail_property`, `foto_detail_property`, `deskripsi_detail_property`) VALUES (\'nmmmm\', NULL, NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `detail_property` (`nama_detail_property`, `foto_detail_property`, `deskripsi_detail_property`) VALUES (\'nmmmm\', NULL, NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `detail_property` (`nama_detail_property`, `foto_detail_property`, `deskripsi_detail_property`) VALUES (:nama_detail_property:, :foto_detail_property:, :deskripsi_detail_property:)', [...], false)
+ 5 SYSTEMPATH\Model.php(383): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(791): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\DetailProperty.php(54): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DetailProperty->tambah()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailProperty))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\SIMKOS\\public\\index.php')
+ERROR - 2024-06-08 08:10:15 --> mysqli_sql_exception: Column 'foto_detail_property' cannot be null in C:\xampp\htdocs\SIMKOS\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\xampp\htdocs\SIMKOS\system\Database\MySQLi\Connection.php(308): mysqli->query('INSERT INTO `de...', 0)
+#1 C:\xampp\htdocs\SIMKOS\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `de...')
+#2 C:\xampp\htdocs\SIMKOS\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `de...')
+#3 C:\xampp\htdocs\SIMKOS\system\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `de...', Array, false)
+#4 C:\xampp\htdocs\SIMKOS\system\Model.php(383): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\SIMKOS\system\BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\SIMKOS\system\Model.php(791): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\SIMKOS\app\Controllers\DetailProperty.php(54): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\SIMKOS\system\CodeIgniter.php(933): App\Controllers\DetailProperty->tambah()
+#9 C:\xampp\htdocs\SIMKOS\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailProperty))
+#10 C:\xampp\htdocs\SIMKOS\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\SIMKOS\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\SIMKOS\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\SIMKOS\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\xampp\htdocs\SIMKOS\system\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+CRITICAL - 2024-06-08 08:10:15 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'foto_detail_property' cannot be null
+[Method: POST, Route: detailproperty/tambah]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `detail_property` (`nama_detail_property`, `foto_detail_property`, `deskripsi_detail_property`) VALUES (:nama_detail_property:, :foto_detail_property:, :deskripsi_detail_property:)', [...], false)
+ 2 SYSTEMPATH\Model.php(383): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(791): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\DetailProperty.php(54): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DetailProperty->tambah()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailProperty))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\SIMKOS\\public\\index.php')
+CRITICAL - 2024-06-08 08:10:15 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'foto_detail_property' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 313.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `detail_property` (`nama_detail_property`, `foto_detail_property`, `deskripsi_detail_property`) VALUES (\'nmmmm\', NULL, NULL)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `detail_property` (`nama_detail_property`, `foto_detail_property`, `deskripsi_detail_property`) VALUES (\'nmmmm\', NULL, NULL)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `detail_property` (`nama_detail_property`, `foto_detail_property`, `deskripsi_detail_property`) VALUES (:nama_detail_property:, :foto_detail_property:, :deskripsi_detail_property:)', [...], false)
+ 4 SYSTEMPATH\Model.php(383): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(791): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\DetailProperty.php(54): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DetailProperty->tambah()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailProperty))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\SIMKOS\\public\\index.php')
+CRITICAL - 2024-06-08 08:10:15 --> [Caused by] mysqli_sql_exception: Column 'foto_detail_property' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 308.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(308): mysqli->query('INSERT INTO `detail_property` (`nama_detail_property`, `foto_detail_property`, `deskripsi_detail_property`) VALUES (\'nmmmm\', NULL, NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `detail_property` (`nama_detail_property`, `foto_detail_property`, `deskripsi_detail_property`) VALUES (\'nmmmm\', NULL, NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `detail_property` (`nama_detail_property`, `foto_detail_property`, `deskripsi_detail_property`) VALUES (\'nmmmm\', NULL, NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `detail_property` (`nama_detail_property`, `foto_detail_property`, `deskripsi_detail_property`) VALUES (:nama_detail_property:, :foto_detail_property:, :deskripsi_detail_property:)', [...], false)
+ 5 SYSTEMPATH\Model.php(383): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(791): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\DetailProperty.php(54): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DetailProperty->tambah()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailProperty))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\SIMKOS\\public\\index.php')
+CRITICAL - 2024-06-08 08:11:39 --> ErrorException: Undefined variable $Foto
+[Method: POST, Route: detailproperty/tambah]
+in APPPATH\Controllers\DetailProperty.php on line 43.
+ 1 APPPATH\Controllers\DetailProperty.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Foto', 'C:\\xampp\\htdocs\\SIMKOS\\app\\Controllers\\DetailProperty.php', 43)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DetailProperty->tambah()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailProperty))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\SIMKOS\\public\\index.php')
+ERROR - 2024-06-08 08:11:51 --> mysqli_sql_exception: Column 'deskripsi_detail_property' cannot be null in C:\xampp\htdocs\SIMKOS\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\xampp\htdocs\SIMKOS\system\Database\MySQLi\Connection.php(308): mysqli->query('INSERT INTO `de...', 0)
+#1 C:\xampp\htdocs\SIMKOS\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `de...')
+#2 C:\xampp\htdocs\SIMKOS\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `de...')
+#3 C:\xampp\htdocs\SIMKOS\system\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `de...', Array, false)
+#4 C:\xampp\htdocs\SIMKOS\system\Model.php(383): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\SIMKOS\system\BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\SIMKOS\system\Model.php(791): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\SIMKOS\app\Controllers\DetailProperty.php(54): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\SIMKOS\system\CodeIgniter.php(933): App\Controllers\DetailProperty->tambah()
+#9 C:\xampp\htdocs\SIMKOS\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailProperty))
+#10 C:\xampp\htdocs\SIMKOS\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\SIMKOS\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\SIMKOS\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\SIMKOS\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\xampp\htdocs\SIMKOS\system\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+CRITICAL - 2024-06-08 08:11:51 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'deskripsi_detail_property' cannot be null
+[Method: POST, Route: detailproperty/tambah]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `detail_property` (`nama_detail_property`, `foto_detail_property`, `deskripsi_detail_property`) VALUES (:nama_detail_property:, :foto_detail_property:, :deskripsi_detail_property:)', [...], false)
+ 2 SYSTEMPATH\Model.php(383): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(791): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\DetailProperty.php(54): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DetailProperty->tambah()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailProperty))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\SIMKOS\\public\\index.php')
+CRITICAL - 2024-06-08 08:11:51 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'deskripsi_detail_property' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 313.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `detail_property` (`nama_detail_property`, `foto_detail_property`, `deskripsi_detail_property`) VALUES (\'nmmmm\', \'1717834311_95751586934763110258.jpg\', NULL)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `detail_property` (`nama_detail_property`, `foto_detail_property`, `deskripsi_detail_property`) VALUES (\'nmmmm\', \'1717834311_95751586934763110258.jpg\', NULL)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `detail_property` (`nama_detail_property`, `foto_detail_property`, `deskripsi_detail_property`) VALUES (:nama_detail_property:, :foto_detail_property:, :deskripsi_detail_property:)', [...], false)
+ 4 SYSTEMPATH\Model.php(383): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(791): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\DetailProperty.php(54): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DetailProperty->tambah()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailProperty))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\SIMKOS\\public\\index.php')
+CRITICAL - 2024-06-08 08:11:51 --> [Caused by] mysqli_sql_exception: Column 'deskripsi_detail_property' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 308.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(308): mysqli->query('INSERT INTO `detail_property` (`nama_detail_property`, `foto_detail_property`, `deskripsi_detail_property`) VALUES (\'nmmmm\', \'1717834311_95751586934763110258.jpg\', NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `detail_property` (`nama_detail_property`, `foto_detail_property`, `deskripsi_detail_property`) VALUES (\'nmmmm\', \'1717834311_95751586934763110258.jpg\', NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `detail_property` (`nama_detail_property`, `foto_detail_property`, `deskripsi_detail_property`) VALUES (\'nmmmm\', \'1717834311_95751586934763110258.jpg\', NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `detail_property` (`nama_detail_property`, `foto_detail_property`, `deskripsi_detail_property`) VALUES (:nama_detail_property:, :foto_detail_property:, :deskripsi_detail_property:)', [...], false)
+ 5 SYSTEMPATH\Model.php(383): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(791): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\DetailProperty.php(54): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DetailProperty->tambah()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailProperty))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\SIMKOS\\public\\index.php')
+ERROR - 2024-06-08 08:12:49 --> mysqli_sql_exception: Column 'deskripsi_detail_property' cannot be null in C:\xampp\htdocs\SIMKOS\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\xampp\htdocs\SIMKOS\system\Database\MySQLi\Connection.php(308): mysqli->query('INSERT INTO `de...', 0)
+#1 C:\xampp\htdocs\SIMKOS\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `de...')
+#2 C:\xampp\htdocs\SIMKOS\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `de...')
+#3 C:\xampp\htdocs\SIMKOS\system\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `de...', Array, false)
+#4 C:\xampp\htdocs\SIMKOS\system\Model.php(383): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\SIMKOS\system\BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\SIMKOS\system\Model.php(791): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\SIMKOS\app\Controllers\DetailProperty.php(54): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\SIMKOS\system\CodeIgniter.php(933): App\Controllers\DetailProperty->tambah()
+#9 C:\xampp\htdocs\SIMKOS\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailProperty))
+#10 C:\xampp\htdocs\SIMKOS\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\SIMKOS\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\SIMKOS\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\SIMKOS\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\xampp\htdocs\SIMKOS\system\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+CRITICAL - 2024-06-08 08:12:49 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'deskripsi_detail_property' cannot be null
+[Method: POST, Route: detailproperty/tambah]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `detail_property` (`nama_detail_property`, `foto_detail_property`, `deskripsi_detail_property`) VALUES (:nama_detail_property:, :foto_detail_property:, :deskripsi_detail_property:)', [...], false)
+ 2 SYSTEMPATH\Model.php(383): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(791): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\DetailProperty.php(54): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DetailProperty->tambah()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailProperty))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\SIMKOS\\public\\index.php')
+CRITICAL - 2024-06-08 08:12:49 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'deskripsi_detail_property' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 313.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `detail_property` (`nama_detail_property`, `foto_detail_property`, `deskripsi_detail_property`) VALUES (\'nmmmm\', \'1717834369_78f0a224f38cf0580f29.jpg\', NULL)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `detail_property` (`nama_detail_property`, `foto_detail_property`, `deskripsi_detail_property`) VALUES (\'nmmmm\', \'1717834369_78f0a224f38cf0580f29.jpg\', NULL)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `detail_property` (`nama_detail_property`, `foto_detail_property`, `deskripsi_detail_property`) VALUES (:nama_detail_property:, :foto_detail_property:, :deskripsi_detail_property:)', [...], false)
+ 4 SYSTEMPATH\Model.php(383): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(791): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\DetailProperty.php(54): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DetailProperty->tambah()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailProperty))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\SIMKOS\\public\\index.php')
+CRITICAL - 2024-06-08 08:12:49 --> [Caused by] mysqli_sql_exception: Column 'deskripsi_detail_property' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 308.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(308): mysqli->query('INSERT INTO `detail_property` (`nama_detail_property`, `foto_detail_property`, `deskripsi_detail_property`) VALUES (\'nmmmm\', \'1717834369_78f0a224f38cf0580f29.jpg\', NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `detail_property` (`nama_detail_property`, `foto_detail_property`, `deskripsi_detail_property`) VALUES (\'nmmmm\', \'1717834369_78f0a224f38cf0580f29.jpg\', NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `detail_property` (`nama_detail_property`, `foto_detail_property`, `deskripsi_detail_property`) VALUES (\'nmmmm\', \'1717834369_78f0a224f38cf0580f29.jpg\', NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `detail_property` (`nama_detail_property`, `foto_detail_property`, `deskripsi_detail_property`) VALUES (:nama_detail_property:, :foto_detail_property:, :deskripsi_detail_property:)', [...], false)
+ 5 SYSTEMPATH\Model.php(383): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(791): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\DetailProperty.php(54): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DetailProperty->tambah()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailProperty))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\SIMKOS\\public\\index.php')
+ERROR - 2024-06-08 08:13:06 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`it_proyek1`.`detail_property`, CONSTRAINT `detail_property_ibfk_1` FOREIGN KEY (`id_detail_property`) REFERENCES `property` (`id_property`)) in C:\xampp\htdocs\SIMKOS\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\xampp\htdocs\SIMKOS\system\Database\MySQLi\Connection.php(308): mysqli->query('INSERT INTO `de...', 0)
+#1 C:\xampp\htdocs\SIMKOS\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `de...')
+#2 C:\xampp\htdocs\SIMKOS\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `de...')
+#3 C:\xampp\htdocs\SIMKOS\system\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `de...', Array, false)
+#4 C:\xampp\htdocs\SIMKOS\system\Model.php(383): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\SIMKOS\system\BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\SIMKOS\system\Model.php(791): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\SIMKOS\app\Controllers\DetailProperty.php(54): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\SIMKOS\system\CodeIgniter.php(933): App\Controllers\DetailProperty->tambah()
+#9 C:\xampp\htdocs\SIMKOS\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailProperty))
+#10 C:\xampp\htdocs\SIMKOS\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\SIMKOS\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\SIMKOS\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\SIMKOS\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\xampp\htdocs\SIMKOS\system\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+CRITICAL - 2024-06-08 08:13:06 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`it_proyek1`.`detail_property`, CONSTRAINT `detail_property_ibfk_1` FOREIGN KEY (`id_detail_property`) REFERENCES `property` (`id_property`))
+[Method: POST, Route: detailproperty/tambah]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `detail_property` (`nama_detail_property`, `foto_detail_property`, `deskripsi_detail_property`) VALUES (:nama_detail_property:, :foto_detail_property:, :deskripsi_detail_property:)', [...], false)
+ 2 SYSTEMPATH\Model.php(383): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(791): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\DetailProperty.php(54): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DetailProperty->tambah()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailProperty))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\SIMKOS\\public\\index.php')
+CRITICAL - 2024-06-08 08:13:06 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`it_proyek1`.`detail_property`, CONSTRAINT `detail_property_ibfk_1` FOREIGN KEY (`id_detail_property`) REFERENCES `property` (`id_property`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 313.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `detail_property` (`nama_detail_property`, `foto_detail_property`, `deskripsi_detail_property`) VALUES (\'sss\', \'1717834386_a61c10ed333ab75f585b.jpg\', \'sss\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `detail_property` (`nama_detail_property`, `foto_detail_property`, `deskripsi_detail_property`) VALUES (\'sss\', \'1717834386_a61c10ed333ab75f585b.jpg\', \'sss\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `detail_property` (`nama_detail_property`, `foto_detail_property`, `deskripsi_detail_property`) VALUES (:nama_detail_property:, :foto_detail_property:, :deskripsi_detail_property:)', [...], false)
+ 4 SYSTEMPATH\Model.php(383): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(791): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\DetailProperty.php(54): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DetailProperty->tambah()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailProperty))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\SIMKOS\\public\\index.php')
+CRITICAL - 2024-06-08 08:13:06 --> [Caused by] mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`it_proyek1`.`detail_property`, CONSTRAINT `detail_property_ibfk_1` FOREIGN KEY (`id_detail_property`) REFERENCES `property` (`id_property`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 308.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(308): mysqli->query('INSERT INTO `detail_property` (`nama_detail_property`, `foto_detail_property`, `deskripsi_detail_property`) VALUES (\'sss\', \'1717834386_a61c10ed333ab75f585b.jpg\', \'sss\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `detail_property` (`nama_detail_property`, `foto_detail_property`, `deskripsi_detail_property`) VALUES (\'sss\', \'1717834386_a61c10ed333ab75f585b.jpg\', \'sss\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `detail_property` (`nama_detail_property`, `foto_detail_property`, `deskripsi_detail_property`) VALUES (\'sss\', \'1717834386_a61c10ed333ab75f585b.jpg\', \'sss\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `detail_property` (`nama_detail_property`, `foto_detail_property`, `deskripsi_detail_property`) VALUES (:nama_detail_property:, :foto_detail_property:, :deskripsi_detail_property:)', [...], false)
+ 5 SYSTEMPATH\Model.php(383): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(791): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\DetailProperty.php(54): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DetailProperty->tambah()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailProperty))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\SIMKOS\\public\\index.php')
+ERROR - 2024-06-08 08:27:50 --> mysqli_sql_exception: Column 'nama_detail_property' cannot be null in C:\xampp\htdocs\SIMKOS\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\xampp\htdocs\SIMKOS\system\Database\MySQLi\Connection.php(308): mysqli->query('INSERT INTO `de...', 0)
+#1 C:\xampp\htdocs\SIMKOS\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `de...')
+#2 C:\xampp\htdocs\SIMKOS\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `de...')
+#3 C:\xampp\htdocs\SIMKOS\system\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `de...', Array, false)
+#4 C:\xampp\htdocs\SIMKOS\system\Model.php(383): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\SIMKOS\system\BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\SIMKOS\system\Model.php(791): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\SIMKOS\app\Controllers\DetailProperty.php(56): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\SIMKOS\system\CodeIgniter.php(933): App\Controllers\DetailProperty->tambah()
+#9 C:\xampp\htdocs\SIMKOS\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailProperty))
+#10 C:\xampp\htdocs\SIMKOS\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\SIMKOS\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\SIMKOS\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\SIMKOS\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\xampp\htdocs\SIMKOS\system\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+CRITICAL - 2024-06-08 08:27:50 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'nama_detail_property' cannot be null
+[Method: POST, Route: detailproperty/tambah]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `detail_property` (`nama_detail_property`, `foto_detail_property`, `id_property`, `deskripsi_detail_property`) VALUES (:nama_detail_property:, :foto_detail_property:, :id_property:, :deskripsi_detail_property:)', [...], false)
+ 2 SYSTEMPATH\Model.php(383): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(791): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\DetailProperty.php(56): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DetailProperty->tambah()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailProperty))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\SIMKOS\\public\\index.php')
+CRITICAL - 2024-06-08 08:27:50 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'nama_detail_property' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 313.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `detail_property` (`nama_detail_property`, `foto_detail_property`, `id_property`, `deskripsi_detail_property`) VALUES (NULL, \'1717835270_1a4d466871fa7526ff94.jpg\', \'4\', \'xxxxx\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `detail_property` (`nama_detail_property`, `foto_detail_property`, `id_property`, `deskripsi_detail_property`) VALUES (NULL, \'1717835270_1a4d466871fa7526ff94.jpg\', \'4\', \'xxxxx\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `detail_property` (`nama_detail_property`, `foto_detail_property`, `id_property`, `deskripsi_detail_property`) VALUES (:nama_detail_property:, :foto_detail_property:, :id_property:, :deskripsi_detail_property:)', [...], false)
+ 4 SYSTEMPATH\Model.php(383): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(791): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\DetailProperty.php(56): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DetailProperty->tambah()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailProperty))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\SIMKOS\\public\\index.php')
+CRITICAL - 2024-06-08 08:27:50 --> [Caused by] mysqli_sql_exception: Column 'nama_detail_property' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 308.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(308): mysqli->query('INSERT INTO `detail_property` (`nama_detail_property`, `foto_detail_property`, `id_property`, `deskripsi_detail_property`) VALUES (NULL, \'1717835270_1a4d466871fa7526ff94.jpg\', \'4\', \'xxxxx\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `detail_property` (`nama_detail_property`, `foto_detail_property`, `id_property`, `deskripsi_detail_property`) VALUES (NULL, \'1717835270_1a4d466871fa7526ff94.jpg\', \'4\', \'xxxxx\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `detail_property` (`nama_detail_property`, `foto_detail_property`, `id_property`, `deskripsi_detail_property`) VALUES (NULL, \'1717835270_1a4d466871fa7526ff94.jpg\', \'4\', \'xxxxx\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `detail_property` (`nama_detail_property`, `foto_detail_property`, `id_property`, `deskripsi_detail_property`) VALUES (:nama_detail_property:, :foto_detail_property:, :id_property:, :deskripsi_detail_property:)', [...], false)
+ 5 SYSTEMPATH\Model.php(383): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(791): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\DetailProperty.php(56): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DetailProperty->tambah()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailProperty))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\SIMKOS\\public\\index.php')
+ERROR - 2024-06-08 08:30:07 --> mysqli_sql_exception: Column 'nama_detail_property' cannot be null in C:\xampp\htdocs\SIMKOS\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\xampp\htdocs\SIMKOS\system\Database\MySQLi\Connection.php(308): mysqli->query('INSERT INTO `de...', 0)
+#1 C:\xampp\htdocs\SIMKOS\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `de...')
+#2 C:\xampp\htdocs\SIMKOS\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `de...')
+#3 C:\xampp\htdocs\SIMKOS\system\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `de...', Array, false)
+#4 C:\xampp\htdocs\SIMKOS\system\Model.php(383): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\SIMKOS\system\BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\SIMKOS\system\Model.php(791): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\SIMKOS\app\Controllers\DetailProperty.php(56): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\SIMKOS\system\CodeIgniter.php(933): App\Controllers\DetailProperty->tambah()
+#9 C:\xampp\htdocs\SIMKOS\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailProperty))
+#10 C:\xampp\htdocs\SIMKOS\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\SIMKOS\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\SIMKOS\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\SIMKOS\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\xampp\htdocs\SIMKOS\system\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+CRITICAL - 2024-06-08 08:30:07 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'nama_detail_property' cannot be null
+[Method: POST, Route: detailproperty/tambah]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `detail_property` (`nama_detail_property`, `foto_detail_property`, `id_property`, `deskripsi_detail_property`) VALUES (:nama_detail_property:, :foto_detail_property:, :id_property:, :deskripsi_detail_property:)', [...], false)
+ 2 SYSTEMPATH\Model.php(383): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(791): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\DetailProperty.php(56): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DetailProperty->tambah()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailProperty))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\SIMKOS\\public\\index.php')
+CRITICAL - 2024-06-08 08:30:07 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'nama_detail_property' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 313.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `detail_property` (`nama_detail_property`, `foto_detail_property`, `id_property`, `deskripsi_detail_property`) VALUES (NULL, \'1717835407_d6d9a217ad3e731a3639.jpg\', \'4\', \'xxxxx\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `detail_property` (`nama_detail_property`, `foto_detail_property`, `id_property`, `deskripsi_detail_property`) VALUES (NULL, \'1717835407_d6d9a217ad3e731a3639.jpg\', \'4\', \'xxxxx\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `detail_property` (`nama_detail_property`, `foto_detail_property`, `id_property`, `deskripsi_detail_property`) VALUES (:nama_detail_property:, :foto_detail_property:, :id_property:, :deskripsi_detail_property:)', [...], false)
+ 4 SYSTEMPATH\Model.php(383): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(791): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\DetailProperty.php(56): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DetailProperty->tambah()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailProperty))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\SIMKOS\\public\\index.php')
+CRITICAL - 2024-06-08 08:30:07 --> [Caused by] mysqli_sql_exception: Column 'nama_detail_property' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 308.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(308): mysqli->query('INSERT INTO `detail_property` (`nama_detail_property`, `foto_detail_property`, `id_property`, `deskripsi_detail_property`) VALUES (NULL, \'1717835407_d6d9a217ad3e731a3639.jpg\', \'4\', \'xxxxx\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `detail_property` (`nama_detail_property`, `foto_detail_property`, `id_property`, `deskripsi_detail_property`) VALUES (NULL, \'1717835407_d6d9a217ad3e731a3639.jpg\', \'4\', \'xxxxx\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `detail_property` (`nama_detail_property`, `foto_detail_property`, `id_property`, `deskripsi_detail_property`) VALUES (NULL, \'1717835407_d6d9a217ad3e731a3639.jpg\', \'4\', \'xxxxx\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `detail_property` (`nama_detail_property`, `foto_detail_property`, `id_property`, `deskripsi_detail_property`) VALUES (:nama_detail_property:, :foto_detail_property:, :id_property:, :deskripsi_detail_property:)', [...], false)
+ 5 SYSTEMPATH\Model.php(383): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(791): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\DetailProperty.php(56): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DetailProperty->tambah()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailProperty))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\SIMKOS\\public\\index.php')
+ERROR - 2024-06-08 08:30:22 --> mysqli_sql_exception: Column 'id_property' cannot be null in C:\xampp\htdocs\SIMKOS\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\xampp\htdocs\SIMKOS\system\Database\MySQLi\Connection.php(308): mysqli->query('INSERT INTO `de...', 0)
+#1 C:\xampp\htdocs\SIMKOS\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `de...')
+#2 C:\xampp\htdocs\SIMKOS\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `de...')
+#3 C:\xampp\htdocs\SIMKOS\system\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `de...', Array, false)
+#4 C:\xampp\htdocs\SIMKOS\system\Model.php(383): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\SIMKOS\system\BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\SIMKOS\system\Model.php(791): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\SIMKOS\app\Controllers\DetailProperty.php(56): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\SIMKOS\system\CodeIgniter.php(933): App\Controllers\DetailProperty->tambah()
+#9 C:\xampp\htdocs\SIMKOS\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailProperty))
+#10 C:\xampp\htdocs\SIMKOS\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\SIMKOS\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\SIMKOS\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\SIMKOS\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\xampp\htdocs\SIMKOS\system\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+CRITICAL - 2024-06-08 08:30:22 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'id_property' cannot be null
+[Method: POST, Route: detailproperty/tambah]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `detail_property` (`nama_detail_property`, `foto_detail_property`, `id_property`, `deskripsi_detail_property`) VALUES (:nama_detail_property:, :foto_detail_property:, :id_property:, :deskripsi_detail_property:)', [...], false)
+ 2 SYSTEMPATH\Model.php(383): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(791): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\DetailProperty.php(56): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DetailProperty->tambah()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailProperty))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\SIMKOS\\public\\index.php')
+CRITICAL - 2024-06-08 08:30:22 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'id_property' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 313.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `detail_property` (`nama_detail_property`, `foto_detail_property`, `id_property`, `deskripsi_detail_property`) VALUES (\'ddd\', \'1717835422_138652298c0b2b4e8861.jpg\', NULL, \'cccc\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `detail_property` (`nama_detail_property`, `foto_detail_property`, `id_property`, `deskripsi_detail_property`) VALUES (\'ddd\', \'1717835422_138652298c0b2b4e8861.jpg\', NULL, \'cccc\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `detail_property` (`nama_detail_property`, `foto_detail_property`, `id_property`, `deskripsi_detail_property`) VALUES (:nama_detail_property:, :foto_detail_property:, :id_property:, :deskripsi_detail_property:)', [...], false)
+ 4 SYSTEMPATH\Model.php(383): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(791): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\DetailProperty.php(56): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DetailProperty->tambah()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailProperty))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\SIMKOS\\public\\index.php')
+CRITICAL - 2024-06-08 08:30:22 --> [Caused by] mysqli_sql_exception: Column 'id_property' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 308.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(308): mysqli->query('INSERT INTO `detail_property` (`nama_detail_property`, `foto_detail_property`, `id_property`, `deskripsi_detail_property`) VALUES (\'ddd\', \'1717835422_138652298c0b2b4e8861.jpg\', NULL, \'cccc\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `detail_property` (`nama_detail_property`, `foto_detail_property`, `id_property`, `deskripsi_detail_property`) VALUES (\'ddd\', \'1717835422_138652298c0b2b4e8861.jpg\', NULL, \'cccc\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `detail_property` (`nama_detail_property`, `foto_detail_property`, `id_property`, `deskripsi_detail_property`) VALUES (\'ddd\', \'1717835422_138652298c0b2b4e8861.jpg\', NULL, \'cccc\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `detail_property` (`nama_detail_property`, `foto_detail_property`, `id_property`, `deskripsi_detail_property`) VALUES (:nama_detail_property:, :foto_detail_property:, :id_property:, :deskripsi_detail_property:)', [...], false)
+ 5 SYSTEMPATH\Model.php(383): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(791): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\DetailProperty.php(56): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DetailProperty->tambah()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailProperty))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\SIMKOS\\public\\index.php')
+ERROR - 2024-06-08 08:30:55 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`it_proyek1`.`detail_property`, CONSTRAINT `detail_property_ibfk_1` FOREIGN KEY (`id_detail_property`) REFERENCES `property` (`id_property`)) in C:\xampp\htdocs\SIMKOS\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\xampp\htdocs\SIMKOS\system\Database\MySQLi\Connection.php(308): mysqli->query('INSERT INTO `de...', 0)
+#1 C:\xampp\htdocs\SIMKOS\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `de...')
+#2 C:\xampp\htdocs\SIMKOS\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `de...')
+#3 C:\xampp\htdocs\SIMKOS\system\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `de...', Array, false)
+#4 C:\xampp\htdocs\SIMKOS\system\Model.php(383): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\SIMKOS\system\BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\SIMKOS\system\Model.php(791): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\SIMKOS\app\Controllers\DetailProperty.php(56): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\SIMKOS\system\CodeIgniter.php(933): App\Controllers\DetailProperty->tambah()
+#9 C:\xampp\htdocs\SIMKOS\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailProperty))
+#10 C:\xampp\htdocs\SIMKOS\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\SIMKOS\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\SIMKOS\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\SIMKOS\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\xampp\htdocs\SIMKOS\system\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+CRITICAL - 2024-06-08 08:30:55 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`it_proyek1`.`detail_property`, CONSTRAINT `detail_property_ibfk_1` FOREIGN KEY (`id_detail_property`) REFERENCES `property` (`id_property`))
+[Method: POST, Route: detailproperty/tambah]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `detail_property` (`nama_detail_property`, `foto_detail_property`, `id_property`, `deskripsi_detail_property`) VALUES (:nama_detail_property:, :foto_detail_property:, :id_property:, :deskripsi_detail_property:)', [...], false)
+ 2 SYSTEMPATH\Model.php(383): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(791): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\DetailProperty.php(56): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DetailProperty->tambah()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailProperty))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\SIMKOS\\public\\index.php')
+CRITICAL - 2024-06-08 08:30:55 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`it_proyek1`.`detail_property`, CONSTRAINT `detail_property_ibfk_1` FOREIGN KEY (`id_detail_property`) REFERENCES `property` (`id_property`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 313.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `detail_property` (`nama_detail_property`, `foto_detail_property`, `id_property`, `deskripsi_detail_property`) VALUES (\',mnm\', \'1717835455_2cbd9d72a4f39971b42a.jpg\', \'3\', \',mn,\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `detail_property` (`nama_detail_property`, `foto_detail_property`, `id_property`, `deskripsi_detail_property`) VALUES (\',mnm\', \'1717835455_2cbd9d72a4f39971b42a.jpg\', \'3\', \',mn,\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `detail_property` (`nama_detail_property`, `foto_detail_property`, `id_property`, `deskripsi_detail_property`) VALUES (:nama_detail_property:, :foto_detail_property:, :id_property:, :deskripsi_detail_property:)', [...], false)
+ 4 SYSTEMPATH\Model.php(383): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(791): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\DetailProperty.php(56): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DetailProperty->tambah()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailProperty))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\SIMKOS\\public\\index.php')
+CRITICAL - 2024-06-08 08:30:55 --> [Caused by] mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`it_proyek1`.`detail_property`, CONSTRAINT `detail_property_ibfk_1` FOREIGN KEY (`id_detail_property`) REFERENCES `property` (`id_property`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 308.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(308): mysqli->query('INSERT INTO `detail_property` (`nama_detail_property`, `foto_detail_property`, `id_property`, `deskripsi_detail_property`) VALUES (\',mnm\', \'1717835455_2cbd9d72a4f39971b42a.jpg\', \'3\', \',mn,\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `detail_property` (`nama_detail_property`, `foto_detail_property`, `id_property`, `deskripsi_detail_property`) VALUES (\',mnm\', \'1717835455_2cbd9d72a4f39971b42a.jpg\', \'3\', \',mn,\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `detail_property` (`nama_detail_property`, `foto_detail_property`, `id_property`, `deskripsi_detail_property`) VALUES (\',mnm\', \'1717835455_2cbd9d72a4f39971b42a.jpg\', \'3\', \',mn,\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `detail_property` (`nama_detail_property`, `foto_detail_property`, `id_property`, `deskripsi_detail_property`) VALUES (:nama_detail_property:, :foto_detail_property:, :id_property:, :deskripsi_detail_property:)', [...], false)
+ 5 SYSTEMPATH\Model.php(383): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(791): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\DetailProperty.php(56): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DetailProperty->tambah()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailProperty))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\SIMKOS\\public\\index.php')
+CRITICAL - 2024-06-08 08:43:14 --> ParseError: syntax error, unexpected integer "1", expecting "," or ";"
+[Method: GET, Route: detailproperty]
+in APPPATH\Views\backendadmin\detailproperty.php on line 81.
+ 1 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('backendadmin/detailproperty', [], true)
+ 3 APPPATH\Controllers\DetailProperty.php(14): view('backendadmin/detailproperty', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DetailProperty->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailProperty))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\SIMKOS\\public\\index.php')
+CRITICAL - 2024-06-08 08:44:15 --> ParseError: syntax error, unexpected end of file
+[Method: GET, Route: detailproperty]
+in APPPATH\Views\backendadmin\detailproperty.php on line 178.
+ 1 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('backendadmin/detailproperty', [], true)
+ 3 APPPATH\Controllers\DetailProperty.php(14): view('backendadmin/detailproperty', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DetailProperty->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailProperty))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\SIMKOS\\public\\index.php')
+CRITICAL - 2024-06-08 08:46:31 --> ParseError: syntax error, unexpected end of file
+[Method: GET, Route: detailproperty]
+in APPPATH\Views\backendadmin\detailproperty.php on line 178.
+ 1 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('backendadmin/detailproperty', [], true)
+ 3 APPPATH\Controllers\DetailProperty.php(14): view('backendadmin/detailproperty', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DetailProperty->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailProperty))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\SIMKOS\\public\\index.php')
+CRITICAL - 2024-06-08 08:47:09 --> ParseError: syntax error, unexpected end of file
+[Method: GET, Route: detailproperty]
+in APPPATH\Views\backendadmin\detailproperty.php on line 178.
+ 1 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('backendadmin/detailproperty', [], true)
+ 3 APPPATH\Controllers\DetailProperty.php(14): view('backendadmin/detailproperty', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DetailProperty->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailProperty))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\SIMKOS\\public\\index.php')
+CRITICAL - 2024-06-08 08:47:15 --> ParseError: syntax error, unexpected end of file
+[Method: GET, Route: detailproperty]
+in APPPATH\Views\backendadmin\detailproperty.php on line 178.
+ 1 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('backendadmin/detailproperty', [], true)
+ 3 APPPATH\Controllers\DetailProperty.php(14): view('backendadmin/detailproperty', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DetailProperty->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailProperty))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\SIMKOS\\public\\index.php')
+CRITICAL - 2024-06-08 08:48:22 --> ParseError: syntax error, unexpected end of file
+[Method: GET, Route: detailproperty]
+in APPPATH\Views\backendadmin\detailproperty.php on line 178.
+ 1 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('backendadmin/detailproperty', [], true)
+ 3 APPPATH\Controllers\DetailProperty.php(14): view('backendadmin/detailproperty', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DetailProperty->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailProperty))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\SIMKOS\\public\\index.php')
+CRITICAL - 2024-06-08 08:49:12 --> ParseError: syntax error, unexpected end of file
+[Method: GET, Route: detailproperty]
+in APPPATH\Views\backendadmin\detailproperty.php on line 178.
+ 1 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('backendadmin/detailproperty', [], true)
+ 3 APPPATH\Controllers\DetailProperty.php(14): view('backendadmin/detailproperty', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DetailProperty->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailProperty))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\SIMKOS\\public\\index.php')
+CRITICAL - 2024-06-08 08:49:52 --> ParseError: syntax error, unexpected end of file
+[Method: GET, Route: detailproperty]
+in APPPATH\Views\backendadmin\detailproperty.php on line 178.
+ 1 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('backendadmin/detailproperty', [], true)
+ 3 APPPATH\Controllers\DetailProperty.php(14): view('backendadmin/detailproperty', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DetailProperty->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailProperty))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\SIMKOS\\public\\index.php')
+CRITICAL - 2024-06-08 08:49:53 --> ParseError: syntax error, unexpected end of file
+[Method: GET, Route: detailproperty]
+in APPPATH\Views\backendadmin\detailproperty.php on line 178.
+ 1 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('backendadmin/detailproperty', [], true)
+ 3 APPPATH\Controllers\DetailProperty.php(14): view('backendadmin/detailproperty', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DetailProperty->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailProperty))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\SIMKOS\\public\\index.php')
+CRITICAL - 2024-06-08 08:49:53 --> ParseError: syntax error, unexpected end of file
+[Method: GET, Route: detailproperty]
+in APPPATH\Views\backendadmin\detailproperty.php on line 178.
+ 1 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('backendadmin/detailproperty', [], true)
+ 3 APPPATH\Controllers\DetailProperty.php(14): view('backendadmin/detailproperty', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DetailProperty->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailProperty))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\SIMKOS\\public\\index.php')
+CRITICAL - 2024-06-08 08:49:54 --> ParseError: syntax error, unexpected end of file
+[Method: GET, Route: detailproperty]
+in APPPATH\Views\backendadmin\detailproperty.php on line 178.
+ 1 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('backendadmin/detailproperty', [], true)
+ 3 APPPATH\Controllers\DetailProperty.php(14): view('backendadmin/detailproperty', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DetailProperty->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailProperty))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\SIMKOS\\public\\index.php')
+CRITICAL - 2024-06-08 08:49:54 --> ParseError: syntax error, unexpected end of file
+[Method: GET, Route: detailproperty]
+in APPPATH\Views\backendadmin\detailproperty.php on line 178.
+ 1 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('backendadmin/detailproperty', [], true)
+ 3 APPPATH\Controllers\DetailProperty.php(14): view('backendadmin/detailproperty', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DetailProperty->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailProperty))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\SIMKOS\\public\\index.php')
+CRITICAL - 2024-06-08 08:49:54 --> ParseError: syntax error, unexpected end of file
+[Method: GET, Route: detailproperty]
+in APPPATH\Views\backendadmin\detailproperty.php on line 178.
+ 1 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('backendadmin/detailproperty', [], true)
+ 3 APPPATH\Controllers\DetailProperty.php(14): view('backendadmin/detailproperty', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DetailProperty->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailProperty))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\SIMKOS\\public\\index.php')
+CRITICAL - 2024-06-08 08:49:55 --> ParseError: syntax error, unexpected end of file
+[Method: GET, Route: detailproperty]
+in APPPATH\Views\backendadmin\detailproperty.php on line 178.
+ 1 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('backendadmin/detailproperty', [], true)
+ 3 APPPATH\Controllers\DetailProperty.php(14): view('backendadmin/detailproperty', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DetailProperty->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailProperty))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\SIMKOS\\public\\index.php')
+CRITICAL - 2024-06-08 08:49:55 --> ParseError: syntax error, unexpected end of file
+[Method: GET, Route: detailproperty]
+in APPPATH\Views\backendadmin\detailproperty.php on line 178.
+ 1 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('backendadmin/detailproperty', [], true)
+ 3 APPPATH\Controllers\DetailProperty.php(14): view('backendadmin/detailproperty', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DetailProperty->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailProperty))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\SIMKOS\\public\\index.php')
+CRITICAL - 2024-06-08 08:49:55 --> ParseError: syntax error, unexpected end of file
+[Method: GET, Route: detailproperty]
+in APPPATH\Views\backendadmin\detailproperty.php on line 178.
+ 1 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('backendadmin/detailproperty', [], true)
+ 3 APPPATH\Controllers\DetailProperty.php(14): view('backendadmin/detailproperty', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DetailProperty->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailProperty))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\SIMKOS\\public\\index.php')
+CRITICAL - 2024-06-08 08:49:55 --> ParseError: syntax error, unexpected end of file
+[Method: GET, Route: detailproperty]
+in APPPATH\Views\backendadmin\detailproperty.php on line 178.
+ 1 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('backendadmin/detailproperty', [], true)
+ 3 APPPATH\Controllers\DetailProperty.php(14): view('backendadmin/detailproperty', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DetailProperty->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailProperty))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\SIMKOS\\public\\index.php')
+CRITICAL - 2024-06-08 08:49:55 --> ParseError: syntax error, unexpected end of file
+[Method: GET, Route: detailproperty]
+in APPPATH\Views\backendadmin\detailproperty.php on line 178.
+ 1 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('backendadmin/detailproperty', [], true)
+ 3 APPPATH\Controllers\DetailProperty.php(14): view('backendadmin/detailproperty', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DetailProperty->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailProperty))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\SIMKOS\\public\\index.php')
+CRITICAL - 2024-06-08 08:58:10 --> ParseError: syntax error, unexpected end of file
+[Method: GET, Route: detailproperty]
+in APPPATH\Views\backendadmin\detailproperty.php on line 178.
+ 1 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('backendadmin/detailproperty', [], true)
+ 3 APPPATH\Controllers\DetailProperty.php(14): view('backendadmin/detailproperty', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DetailProperty->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailProperty))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\SIMKOS\\public\\index.php')
+CRITICAL - 2024-06-08 08:59:26 --> ParseError: syntax error, unexpected end of file
+[Method: GET, Route: detailproperty]
+in APPPATH\Views\backendadmin\detailproperty.php on line 178.
+ 1 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('backendadmin/detailproperty', [], true)
+ 3 APPPATH\Controllers\DetailProperty.php(14): view('backendadmin/detailproperty', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DetailProperty->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailProperty))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\SIMKOS\\public\\index.php')
+CRITICAL - 2024-06-08 08:59:32 --> ParseError: syntax error, unexpected end of file
+[Method: GET, Route: detailproperty]
+in APPPATH\Views\backendadmin\detailproperty.php on line 178.
+ 1 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('backendadmin/detailproperty', [], true)
+ 3 APPPATH\Controllers\DetailProperty.php(14): view('backendadmin/detailproperty', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DetailProperty->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailProperty))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\SIMKOS\\public\\index.php')
+CRITICAL - 2024-06-08 09:06:18 --> ErrorException: Undefined array key "nama_property"
+[Method: GET, Route: detailproperty]
+in APPPATH\Views\backendadmin\detailproperty.php on line 114.
+ 1 APPPATH\Views\backendadmin\detailproperty.php(114): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama_property"', 'C:\\xampp\\htdocs\\SIMKOS\\app\\Views\\backendadmin\\detailproperty.php', 114)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\SIMKOS\\app\\Views\\backendadmin\\detailproperty.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('backendadmin/detailproperty', [], true)
+ 5 APPPATH\Controllers\DetailProperty.php(14): view('backendadmin/detailproperty', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DetailProperty->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DetailProperty))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\SIMKOS\\public\\index.php')
+CRITICAL - 2024-06-08 15:18:35 --> BadMethodCallException: Call to undefined method App\Models\Profil_Model::getProfil
+[Method: GET, Route: profil]
+in SYSTEMPATH\Model.php on line 921.
+ 1 APPPATH\Controllers\Profil.php(18): CodeIgniter\Model->__call('getProfil', [])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Profil->index()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profil))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\SIMKOS\\public\\index.php')
+CRITICAL - 2024-06-08 15:24:33 --> Error: Call to a member function getProfil() on null
+[Method: GET, Route: profil]
+in APPPATH\Controllers\Profil.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Profil->index()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profil))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\SIMKOS\\public\\index.php')
+CRITICAL - 2024-06-08 15:26:06 --> ParseError: syntax error, unexpected token "else", expecting end of file
+[Method: GET, Route: profil]
+in APPPATH\Views\backendadmin\profil_view.php on line 93.
+ 1 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('backendadmin/profil_view', [], true)
+ 3 APPPATH\Controllers\Profil.php(19): view('backendadmin/profil_view', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Profil->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profil))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\SIMKOS\\public\\index.php')
+INFO - 2024-06-08 15:26:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-08 15:26:30 --> ErrorException: Undefined array key "tgl_dibuat"
+[Method: GET, Route: profil]
+in APPPATH\Views\backendadmin\profil_view.php on line 78.
+ 1 APPPATH\Views\backendadmin\profil_view.php(78): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tgl_dibuat"', 'C:\\xampp\\htdocs\\SIMKOS\\app\\Views\\backendadmin\\profil_view.php', 78)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\SIMKOS\\app\\Views\\backendadmin\\profil_view.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('backendadmin/profil_view', [], true)
+ 5 APPPATH\Controllers\Profil.php(19): view('backendadmin/profil_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Profil->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profil))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\SIMKOS\\public\\index.php')
+INFO - 2024-06-08 15:27:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-08 15:27:51 --> ErrorException: Undefined array key "tgl_dibuat"
+[Method: GET, Route: profil]
+in APPPATH\Views\backendadmin\profil_view.php on line 78.
+ 1 APPPATH\Views\backendadmin\profil_view.php(78): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tgl_dibuat"', 'C:\\xampp\\htdocs\\SIMKOS\\app\\Views\\backendadmin\\profil_view.php', 78)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\SIMKOS\\app\\Views\\backendadmin\\profil_view.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('backendadmin/profil_view', [], true)
+ 5 APPPATH\Controllers\Profil.php(19): view('backendadmin/profil_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Profil->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profil))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\SIMKOS\\public\\index.php')
+INFO - 2024-06-08 15:28:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-08 15:28:59 --> ErrorException: Undefined array key "status_property"
+[Method: GET, Route: profil]
+in APPPATH\Views\backendadmin\profil_view.php on line 83.
+ 1 APPPATH\Views\backendadmin\profil_view.php(83): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "status_property"', 'C:\\xampp\\htdocs\\SIMKOS\\app\\Views\\backendadmin\\profil_view.php', 83)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\SIMKOS\\app\\Views\\backendadmin\\profil_view.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('backendadmin/profil_view', [], true)
+ 5 APPPATH\Controllers\Profil.php(19): view('backendadmin/profil_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Profil->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profil))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\SIMKOS\\public\\index.php')
+INFO - 2024-06-08 15:29:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-08 15:33:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-08 15:33:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-08 15:34:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-08 15:35:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-06-08 15:35:25 --> mysqli_sql_exception: Column 'tgl_dibuat' cannot be null in C:\xampp\htdocs\SIMKOS\system\Database\MySQLi\Connection.php:308
+Stack trace:
+#0 C:\xampp\htdocs\SIMKOS\system\Database\MySQLi\Connection.php(308): mysqli->query('INSERT INTO `pr...', 0)
+#1 C:\xampp\htdocs\SIMKOS\system\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 C:\xampp\htdocs\SIMKOS\system\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 C:\xampp\htdocs\SIMKOS\system\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 C:\xampp\htdocs\SIMKOS\system\Model.php(383): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\SIMKOS\system\BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\SIMKOS\system\Model.php(791): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\SIMKOS\app\Controllers\Profil.php(38): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\SIMKOS\system\CodeIgniter.php(933): App\Controllers\Profil->tambah()
+#9 C:\xampp\htdocs\SIMKOS\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profil))
+#10 C:\xampp\htdocs\SIMKOS\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\SIMKOS\system\Boot.php(312): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\SIMKOS\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\SIMKOS\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\xampp\htdocs\SIMKOS\system\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+CRITICAL - 2024-06-08 15:35:25 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'tgl_dibuat' cannot be null
+[Method: POST, Route: profil/tambah]
+in SYSTEMPATH\Database\BaseConnection.php on line 676.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `profil` (`judul`, `keterangan`, `tgl_dibuat`) VALUES (:judul:, :keterangan:, :tgl_dibuat:)', [...], false)
+ 2 SYSTEMPATH\Model.php(383): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(791): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Profil.php(38): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Profil->tambah()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profil))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\SIMKOS\\public\\index.php')
+CRITICAL - 2024-06-08 15:35:25 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'tgl_dibuat' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 313.
+ 1 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `profil` (`judul`, `keterangan`, `tgl_dibuat`) VALUES (\'wwee\', \'eeee\', NULL)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `profil` (`judul`, `keterangan`, `tgl_dibuat`) VALUES (\'wwee\', \'eeee\', NULL)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `profil` (`judul`, `keterangan`, `tgl_dibuat`) VALUES (:judul:, :keterangan:, :tgl_dibuat:)', [...], false)
+ 4 SYSTEMPATH\Model.php(383): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(791): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\Profil.php(38): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Profil->tambah()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profil))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\SIMKOS\\public\\index.php')
+CRITICAL - 2024-06-08 15:35:25 --> [Caused by] mysqli_sql_exception: Column 'tgl_dibuat' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 308.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(308): mysqli->query('INSERT INTO `profil` (`judul`, `keterangan`, `tgl_dibuat`) VALUES (\'wwee\', \'eeee\', NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `profil` (`judul`, `keterangan`, `tgl_dibuat`) VALUES (\'wwee\', \'eeee\', NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `profil` (`judul`, `keterangan`, `tgl_dibuat`) VALUES (\'wwee\', \'eeee\', NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query('INSERT INTO `profil` (`judul`, `keterangan`, `tgl_dibuat`) VALUES (:judul:, :keterangan:, :tgl_dibuat:)', [...], false)
+ 5 SYSTEMPATH\Model.php(383): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(791): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Profil.php(38): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Profil->tambah()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profil))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\Commands\Server\rewrite.php(49): require_once('C:\\xampp\\htdocs\\SIMKOS\\public\\index.php')
+INFO - 2024-06-08 15:36:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-08 15:36:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-08 15:38:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-08 15:39:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-08 15:39:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-08 15:42:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-08 15:43:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-08 15:43:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-08 15:43:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-08 15:45:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-08 15:46:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-08 23:46:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-08 23:48:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

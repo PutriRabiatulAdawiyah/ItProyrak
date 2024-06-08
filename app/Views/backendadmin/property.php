@@ -24,36 +24,38 @@
                                         <span aria-hidden="true">&times;</span>
                                     </button>
                                 </div>
+                                <form action="/property/tambah" method="post" enctype="multipart/form-data">
                                 <div class="modal-body">
-                                    <form>
+                                    
                                         <div class="mb-3">
                                             <label for="exampleInputPassword1" class="form-label">Nama Property</label>
-                                            <input type="text" placeholder="Masukkan Nama Detail Property"
+                                            <input type="text" name="nama_property" placeholder="Masukkan Nama Detail Property"
                                                 class="form-control" id="exampleInputPassword1">
                                         </div>
                                         <div class="mb-3">
                                             <label for="exampleInputPassword1" class="form-label">Harga Property</label>
-                                            <input type="text" placeholder="Masukkan Foto Detail Property"
+                                            <input type="text" name="harga_property" placeholder="Masukkan Foto Detail Property"
                                                 class="form-control" id="exampleInputPassword1">
                                         </div>
                                         <div class="mb-3">
                                             <label for="exampleInputPassword1" class="form-label">Gambar
                                                 Property</label>
-                                            <input type="file" placeholder="Masukkan Deskripsi Detail Property"
+                                            <input type="file" name="foto_property" placeholder="Masukkan Deskripsi Detail Property"
                                                 class="form-control" id="exampleInputPassword1">
                                         </div>
                                         <div class="mb-3">
                                             <label for="exampleInputPassword1" class="form-label">status
                                                 Property</label>
-                                            <input type="text" placeholder="Masukkan Deskripsi Detail Property"
+                                            <input type="text" name="status_property" placeholder="Masukkan Deskripsi Detail Property"
                                                 class="form-control" id="exampleInputPassword1">
                                         </div>
-                                    </form>
+                                    
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                    <button type="button" class="btn btn-primary">Simpan Data</button>
+                                    <button type="submit" class="btn btn-primary">Simpan Data</button>
                                 </div>
+                                </form>
                             </div>
                         </div>
                     </div>
@@ -77,7 +79,7 @@
                                 <td> <?= $data['nama_property'] ?> </td>
                                 <td> <?= $data['harga_property'] ?> </td>
                                 <td>
-                                    <img src="/gambar/kost.jpg" width="50px" alt="">
+                                    <img src="/gambar/<?= $data['foto_property'] ?>" width="50px" alt="">
                                 </td>
                                 <td><?= $data['status_property'] ?></td>
                                 <td class="d-flex justify-content-center">

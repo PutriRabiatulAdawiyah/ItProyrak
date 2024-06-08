@@ -49,15 +49,11 @@
           <a href="index.php" class="logo m-0 float-start">Property</a>
 
           <ul class="js-clone-nav d-none d-lg-inline-block text-start site-menu float-end">
-<<<<<<< HEAD
             <li><a href="/index">Home</a></li>
-            <li><a href="properties">Properties</a></li>
-=======
-            <li><a href="index.php">Home</a></li>
-            <li><a href="properties.php">Properties</a></li>
->>>>>>> 6f5197ed599f8bf5f3f3e67af0ba36fda550a409
-            <li><a href="about.php">About</a></li>
-            <li class="active"><a href="contact.php">Contact Us</a></li>
+            <li><a href="/properties">Properties</a></li>
+            <li><a href="/index">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li class="active"><a href="contact">Contact Us</a></li>
           </ul>
 
           <a href="#"
@@ -69,10 +65,7 @@
       </div>
     </div>
     <div class="side-new mr3">
-<<<<<<< HEAD
       <a href="adminlogin" class="btn btn-primary py-2 px-3">LOGIN</a>
-=======
-      <a href="login.php" class="btn btn-primary py-2 px-3">LOGIN</a>
->>>>>>> 6f5197ed599f8bf5f3f3e67af0ba36fda550a409
+      
     </div>
   </nav>

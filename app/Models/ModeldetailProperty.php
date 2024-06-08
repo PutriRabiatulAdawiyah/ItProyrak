@@ -6,13 +6,13 @@ use CodeIgniter\Model;
 
 class ModeldetailProperty extends Model
 {
-    protected $table            = 'detailproperties';
+    protected $table            = 'detail_property';
     protected $primaryKey       = 'id_detail_property';
     protected $useAutoIncrement = true;
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = [];
+    protected $allowedFields    = ["nama_detail_property", "foto_detail_property", "id_property", "deskripsi_detail_property"];
 
     protected bool $allowEmptyInserts = false;
     protected bool $updateOnlyChanged = true;

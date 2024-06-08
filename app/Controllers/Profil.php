@@ -8,50 +8,49 @@ class Profil extends BaseController
 {
     protected $profilModel;
 
-    public function __construct()
-    {
-        $this->profilModel = new Profil_Model();
-    }
+    // public function __construct()
+    // {
+    //     $this->profilModel = new Profil_Model();
+    // }
 
     public function index()
     {
-        $data['DataProfil'] = $this->profilModel->getProfil();
-        return view('backendadmin/profil_view', $data);
+        $model = new Profil_Model();
+        return view('backendadmin/profil_view', ["profil"=> $model->findAll()]);
     }
 
     public function tambah()
     {
-        if ($this->request->getMethod() === 'post') {
-            $data = [
-                'judul' => $this->request->getPost('judul'),
-                'keterangan' => $this->request->getPost('keterangan'),
-                'tgl_dibuat' => date('Y-m-d H:i:s'),
-                'deskripsi' => $this->request->getPost('deskripsi'),
-            ];
+        $model = new Profil_Model();
+        
+        // $foto = $this->request->getFile("foto_property");
 
-            if ($this->profilModel->tambahProfil($data)) {
-                return redirect()->to(base_url('profil'))->with('status', 'Profil berhasil ditambahkan');
-            } else {
-                return redirect()->to(base_url('profil'))->with('status', 'Gagal menambahkan profil');
-            }
-        }
+        // $namaGambar = $foto->getRandomName();
+        // $foto->move(FCPATH . "/gambar", $namaGambar);
+
+        $data = [   
+            "judul" => $this->request->getVar("judul"), 
+            "keterangan" => $this->request->getVar("keterangan"),
+            "deskripsi" => $this->request->getVar("deskripsi"),
+            "tgl_dibuat" => $this->request->getVar("tgl_dibuat"),
+        ];
+
+        $model->insert($data);
+        return redirect()->to("/profil");
     }
 
     public function edit($id_profil)
     {
-        if ($this->request->getMethod() === 'post') {
-            $data = [
-                'judul' => $this->request->getPost('judul'),
-                'keterangan' => $this->request->getPost('keterangan'),
-                'deskripsi' => $this->request->getPost('deskripsi'),
-            ];
+        $model = new ModelProperty()
+        $idprofil = $this->request->getVar("id_profil");
 
-            if ($this->profilModel->updateProfil($id_profil, $data)) {
-                return redirect()->to(base_url('profil'))->with('status', 'Profil berhasil diubah');
-            } else {
-                return redirect()->to(base_url('profil'))->with('status', 'Gagal mengubah profil');
-            }
-        }
+        $data[
+            "judul" => $this->request->getVar("judul"), 
+            "keterangan" => $this->request->getVar("keterangan"),
+            "deskripsi" => $this->request->getVar("deskripsi"),
+        ];
+        $model->update($idprofil, $data);
+        return redirect()->to("/profil")
     }
 
     public function hapus($id_profil)

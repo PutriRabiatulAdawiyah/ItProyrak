@@ -24,32 +24,42 @@
                                         <span aria-hidden="true">&times;</span>
                                     </button>
                                 </div>
+                                <form action="/detailproperty/tambah" method="post" enctype="multipart/form-data">
                                 <div class="modal-body">
-                                    <form>
-                                        <div class="mb-3">
-                                            <label for="exampleInputPassword1" class="form-label">Nama Detail
-                                                Property</label>
-                                            <input type="text" placeholder="Masukkan Nama Detail Property"
+
+                                <div class="mb-3">
+                                            <label for="exampleInputPassword1" class="form-label">Nama Detail Property</label>
+                                            <input type="text" name="nama_detail_property" placeholder="Masukkan Foto Detail Property"
                                                 class="form-control" id="exampleInputPassword1">
+                                        </div>
+                                    
+                                        <div class="mb-3">
+                                            <label for="">Pilih Property</label>
+                                        <select name="id_property" class="custom-select">
+                                            <?php foreach ($property as $data): ?>
+                                                <option value="<?= $data["id_property"] ?>"><?= $data["nama_property"] ?></option>
+                                                <?php endforeach; ?>
+
+</select>
                                         </div>
                                         <div class="mb-3">
                                             <label for="exampleInputPassword1" class="form-label">Foto Detail
                                                 Property</label>
-                                            <input type="file" placeholder="Masukkan Foto Detail Property"
+                                            <input type="file" name="foto_detail_property" placeholder="Masukkan Foto Detail Property"
                                                 class="form-control" id="exampleInputPassword1">
                                         </div>
                                         <div class="mb-3">
-                                            <label for="exampleInputPassword1" class="form-label">Deskripsi Detail
+                                            <label for="exampleInputPassword1" name="deskripsi_detail_property" class="form-label">Deskripsi Detail
                                                 Property</label>
-                                            <input type="text" placeholder="Masukkan Deskripsi Detail Property"
+                                            <input type="text" name="deskripsi_detail_property" placeholder="Masukkan Deskripsi Detail Property"
                                                 class="form-control" id="exampleInputPassword1">
                                         </div>
-                                    </form>
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                    <button type="button" class="btn btn-primary">Simpan Data</button>
+                                    <button type="submit" class="btn btn-primary">Simpan Data</button>
                                 </div>
+                                </form>
                             </div>
                         </div>
                     </div>
@@ -65,21 +75,25 @@
                             </tr>
                         </thead>
                         <tbody>
+
+                        <?php $no=1; foreach($detailproperty as $data): ?> 
                             <tr>
-                                <td>1</td>
-                                <td>Kost A</td>
+                                <td><?= $no ++; ?></td>
+                                <td> <?= $data['nama_detail_property'] ?> </td>
                                 <td>
-                                    <img src="/gambar/kost.jpg" width="50px" alt="">
-                                <td>tersedia 1 kasur, 1 meja, dan 2 kursi</td>
+                                    <img src="/gambar/<?= $data['foto_detail_property'] ?>" width="50px" alt="">
                                 </td>
+                                <td><?= $data['deskripsi_detail_property'] ?></td>
+                                
                                 <td class="d-flex justify-content-center">
-                                    <button type="button" class="btn btn-warning" data-toggle="modal"
-                                        data-target="#editModal"><i class="bi bi-pencil"></i></button>
-                                    <button class="btn btn-danger" data-toggle="modal" data-target="#hapusModal"><i
+                                    <button class="btn btn-warning" data-toggle="modal" data-target="#editModal"><i
+                                            class="bi bi-pencil"></i></button>
+                                    <button class="btn btn-danger" data-toggle="modal"
+                                        data-target="#hapusModal<?= $data['id_detail_property'] ?>"><i
                                             class="bi bi-trash"></i></button>
                                 </td>
                             </tr>
-
+                            <?php endforeach; ?>
                             <!-- Modal -->
                             <div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="exampleModalLabel"
                                 aria-hidden="true">
@@ -91,8 +105,18 @@
                                                 <span aria-hidden="true">&times;</span>
                                             </button>
                                         </div>
-                                        <div class="modal-body">
-                                            <>
+                                        <form action="/detailproperty/edit" method="post">
+                                            <div class="modal-body">
+                                                <div class="mb-3">
+                                                    <label for="exampleInputPassword1" class="form-label">Edit Nama
+                                                        Property</label>
+                                                    <input type="text" name="nama_detail_property"
+                                                        value="<?= $data['nama_detail_property'] ?>"
+                                                        placeholder="Masukkan Nama Detail Property" class="form-control"
+                                                        id="exampleInputPassword1">
+                                            </div>
+                                             <div class="modal-body">
+                                            
                                                 <div class="mb-3">
                                                     <label for="exampleInputPassword1" class="form-label">Edit Detail
                                                         Property</label>
@@ -108,18 +132,23 @@
                                                 <div class="mb-3">
                                                     <label for="exampleInputPassword1" class="form-label">Edit Deskripsi
                                                         Detail Property</label>
-                                                    <input type="text" name="id_detail_property"
-                                                    value="<?= $data['id_detail_property'] ?>"
-                                                    placeholder="Masukkan Deskripsi Detail Property"
+                                                    <input type="text" placeholder="Masukkan Deskripsi Detail Property"
                                                         class="form-control" id="exampleInputPassword1">
                                                 </div>
+                                            </form>
                                         </div>
+                                        </div>
+                                            <div class="modal-footer">
+                                                <input type="hidden" name="id_detail_property"
+                                                    value="">
+                                                <button type="button" class="btn btn-secondary"
+                                                    data-dismiss="modal">Close</button>
+                                                <button type="submit" class="btn btn-primary">Simpan Data</button>
+                                            </div>
                                         <div class="modal-footer">
-                                            <input type="hidden" name="id_detail_property"
-                                                value="<?= $data['id_detail_property'] ?>">
                                             <button type="button" class="btn btn-secondary"
                                                 data-dismiss="modal">Close</button>
-                                            <button type="submit" class="btn btn-primary">Simpan Data</button>
+                                            <button type="button" class="btn btn-primary">Simpan Data</button>
                                         </div>
                                     </div>
                                 </div>

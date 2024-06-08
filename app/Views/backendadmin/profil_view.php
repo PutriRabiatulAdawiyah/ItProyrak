@@ -15,41 +15,55 @@
                     <?php endif; ?>
 
                     <!-- Button trigger modal Tambah Profil -->
-                    <button type="button" class="btn btn-primary mb-4" data-toggle="modal" data-target="#tambahProfilModal">
-                        Tambah Profil
+                    <button type="button" class="btn btn-primary mb-4" data-toggle="modal" data-target="#exampleModal">
+                    <i class="bi bi-plus"></i>Tambah Profil
                     </button>
 
                     <!-- Modal Tambah Profil -->
-                    <div class="modal fade" id="tambahProfilModal" tabindex="-1" role="dialog" aria-labelledby="tambahProfilModalLabel" aria-hidden="true">
-                        <div class="modal-dialog" role="document">
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h5 class="modal-title" id="tambahProfilModalLabel">Tambah Profil</h5>
+                                    <h5 class="modal-title" id="exampleModalLabel">TAMBAH PROFIL</h5>
                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                         <span aria-hidden="true">&times;</span>
                                     </button>
                                 </div>
+                                <form action="/profil/tambah" method="post" enctype="multipart/form-data">
                                 <div class="modal-body">
-                                    <form action="<?php echo base_url('profil/tambah'); ?>" method="post">
-                                        <div class="form-group">
-                                            <label for="judul">Judul</label>
-                                            <input type="text" name="judul" class="form-control" placeholder="Judul" required>
+                                    
+                                        <div class="mb-3">
+                                            <label for="exampleInputPassword1" class="form-label">Tanggal Dibuat</label>
+                                            <input type="date" name="tgl_dibuat" placeholder="Masukkan waktu"
+                                                class="form-control" id="exampleInputPassword1">
                                         </div>
-                                        <div class="form-group">
-                                            <label for="keterangan">Keterangan</label>
-                                            <input type="text" name="keterangan" class="form-control" placeholder="Keterangan" required>
+                                        <div class="mb-3">
+                                            <label for="exampleInputPassword1" class="form-label">judul</label>
+                                            <input type="text" name="judul" placeholder="Masukkan Nama Detail Property"
+                                                class="form-control" id="exampleInputPassword1">
                                         </div>
-                                        <div class="form-group">
-                                            <label for="deskripsi">Deskripsi</label>
-                                            <input type="text" name="deskripsi" class="form-control" placeholder="Deskripsi" required>
+                                        <div class="mb-3">
+                                            <label for="exampleInputPassword1" class="form-label">Keterangan</label>
+                                            <input type="text" name="keterangan" placeholder="Masukkan Foto keterangan"
+                                                class="form-control" id="exampleInputPassword1">
                                         </div>
-                                        <button type="submit" class="btn btn-primary">Tambah Profil</button>
-                                    </form>
+                                        <div class="mb-3">
+                                            <label for="exampleInputPassword1" class="form-label">Deskripsi</label>
+                                            <input type="text" name="deskripsi" placeholder="Masukkan Deskripsi"
+                                                class="form-control" id="exampleInputPassword1">
+                                        </div>
+                                    
                                 </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <button type="submit" class="btn btn-primary">Simpan Data</button>
+                                </div>
+                                </form>
                             </div>
                         </div>
                     </div>
-
+                    
                     <!-- Tabel untuk menampilkan data -->
                     <table class="table table-bordered table-head-bg-info table-bordered-bd-info mt-4">
                         <thead>
@@ -63,63 +77,24 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <?php if (isset($DataProfil) && !empty($DataProfil)): ?>
-                                <?php $no = 1; foreach ($DataProfil as $profil): ?>
+                            <?php $no=1; foreach($profil as $data): ?>
                                     <tr>
                                         <td><?php echo $no++; ?></td>
-                                        <td><?php echo date('d M Y', strtotime($profil['tgl_dibuat'])); ?></td>
-                                        <td><?php echo $profil['judul']; ?></td>
-                                        <td><?php echo $profil['keterangan']; ?></td>
-                                        <td><?php echo $profil['deskripsi']; ?></td>
-                                        <td class="actions">
-                                            <!-- Button trigger modal Edit Profil -->
-                                            <button type="button" class="btn btn-warning btn-sm" data-toggle="modal" data-target="#editProfilModal-<?php echo $profil['id_profil']; ?>">
-                                                <i class="la la-edit"></i>
-                                            </button>
-
-                                            <!-- Modal Edit Profil -->
-                                            <div class="modal fade" id="editProfilModal-<?php echo $profil['id_profil']; ?>" tabindex="-1" role="dialog" aria-labelledby="editProfilModalLabel-<?php echo $profil['id_profil']; ?>" aria-hidden="true">
-                                                <div class="modal-dialog" role="document">
-                                                    <div class="modal-content">
-                                                        <div class="modal-header">
-                                                            <h5 class="modal-title" id="editProfilModalLabel-<?php echo $profil['id_profil']; ?>">Edit Profil</h5>
-                                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                                <span aria-hidden="true">&times;</span>
-                                                            </button>
-                                                        </div>
-                                                        <div class="modal-body">
-                                                            <form action="<?php echo base_url('profil/edit/'.$profil['id_profil']); ?>" method="post">
-                                                                <div class="form-group">
-                                                                    <label for="judul">Judul</label>
-                                                                    <input type="text" name="judul" class="form-control" value="<?php echo $profil['judul']; ?>" required>
-                                                                </div>
-                                                                <div class="form-group">
-                                                                    <label for="keterangan">Keterangan</label>
-                                                                    <input type="text" name="keterangan" class="form-control" value="<?php echo $profil['keterangan']; ?>" required>
-                                                                </div>
-                                                                <div class="form-group">
-                                                                    <label for="deskripsi">Deskripsi</label>
-                                                                    <input type="text" name="deskripsi" class="form-control" value="<?php echo $profil['deskripsi']; ?>" required>
-                                                                </div>
-                                                                <button type="submit" class="btn btn-primary">Simpan Perubahan</button>
-                                                            </form>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <!-- Tombol hapus profil dengan konfirmasi -->
-                                            <a href="<?php echo base_url('profil/hapus/'.$profil['id_profil']); ?>" class="btn btn-danger btn-sm" onclick="return confirm('Anda yakin ingin menghapus profil ini?');">
-                                                <i class="la la-trash"></i>
-                                            </a>
+                                        <td><?php echo date('d M Y', strtotime($data['tgl_dibuat'])); ?></td>
+                                        <td><?php echo $data['judul']; ?></td>
+                                        <td><?php echo $data['keterangan']; ?></td>
+                                        <td><?php echo $data['deskripsi']; ?></td>
+                                        
+                                        <td class="d-flex justify-content-center">
+                                            <button class="btn btn-warning" data-toggle="modal" data-target="#editModal"><i
+                                                    class="bi bi-pencil"></i></button>
+                                                    <button class="btn btn-danger" data-toggle="modal"
+                                                        data-target="#hapusModal<?= $data['id_profil'] ?>"><i
+                                                            class="bi bi-trash"></i></button>
                                         </td>
                                     </tr>
                                 <?php endforeach; ?>
-                            <?php else: ?>
-                                <tr>
-                                    <td colspan="6" class="text-center">Tidak ada data profil.</td>
-                                </tr>
-                            <?php endif; ?>
+                            
                         </tbody>
                     </table>
                 </div>

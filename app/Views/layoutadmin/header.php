@@ -10,10 +10,7 @@
 	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no'
 		name='viewport' />
 	<link rel="stylesheet" href="/admin/css/bootstrap.min.css">
-<<<<<<< HEAD
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-=======
->>>>>>> 6f5197ed599f8bf5f3f3e67af0ba36fda550a409
 	<link rel="stylesheet"
 		href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i">
 	<link rel="stylesheet" href="/admin/css/ready.css">
@@ -47,11 +44,8 @@
 							</a>
 						</li>
 						<li class="nav-item dropdown">
-<<<<<<< HEAD
 							<a class="dropdown-item" href="/adminlogin"><i class="fa fa-power-off"></i> Logout</a>
-=======
 							<a class="dropdown-item" href="#"><i class="fa fa-power-off"></i> Logout</a>
->>>>>>> 6f5197ed599f8bf5f3f3e67af0ba36fda550a409
 							
 						</li>
 					</ul>
@@ -62,59 +56,43 @@
 			<div class="scrollbar-inner sidebar-wrapper">
 				<ul class="nav">
 					<li class="nav-item active">
-<<<<<<< HEAD
 						<a href="/homeadmin">
-=======
-						<a href="index.html">
->>>>>>> 6f5197ed599f8bf5f3f3e67af0ba36fda550a409
 							<i class="la la-dashboard"></i>
 							<p>Dashboard</p>
 						</a>
 					</li>
 					<li class="nav-item">
-						<a href="icons.html">
+							<a href="/profil">
 							<i class="la la-fonticons"></i>
 							<p>Profil</p>
 						</a>
 					</li>
 					<li class="nav-item">
-<<<<<<< HEAD
 						<a href="/property">
-=======
-						<a href="components.html">
->>>>>>> 6f5197ed599f8bf5f3f3e67af0ba36fda550a409
 							<i class="la la-table"></i>
 							<p>Propety</p>
 						</a>
 					</li>
 					<li class="nav-item">
-<<<<<<< HEAD
 						<a href="/detailproperty">
-=======
-						<a href="forms.html">
->>>>>>> 6f5197ed599f8bf5f3f3e67af0ba36fda550a409
 							<i class="la la-keyboard-o"></i>
 							<p>Detail Propery</p>
 						</a>
 					</li>
 					<li class="nav-item">
-<<<<<<< HEAD
 						<a href="/penyewa">
-=======
-						<a href="tables.html">
->>>>>>> 6f5197ed599f8bf5f3f3e67af0ba36fda550a409
 							<i class="la la-th"></i>
 							<p>Penyewa</p>
 						</a>
 					</li>
 					<li class="nav-item">
-						<a href="notifications.html">
+						<a href="/pembayaran">
 							<i class="la la-bell"></i>
 							<p>Pembayaran</p>
 						</a>
 					</li>
 					<li class="nav-item">
-						<a href="typography.html">
+						<a href="/datasewa">
 							<i class="la la-font"></i>
 							<p>Data Sewa</p>
 						</a>

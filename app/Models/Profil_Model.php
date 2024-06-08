@@ -6,27 +6,41 @@ use CodeIgniter\Model;
 
 class Profil_Model extends Model
 {
-    protected $table = 'profil'; // Nama tabel yang sebenarnya
-    protected $primaryKey = 'id_profil'; // Primary key yang sebenarnya
-    protected $allowedFields = ['judul', 'keterangan', 'tgl_dibuat', 'deskripsi']; // Field yang sebenarnya
+    protected $table            = 'profil';
+    protected $primaryKey       = 'id_profil';
+    protected $useAutoIncrement = true;
+    protected $returnType       = 'array';
+    protected $useSoftDeletes   = false;
+    protected $protectFields    = true;
+    protected $allowedFields    = ["judul", "keterangan", "tgl_dibuat", "deskripsi"];
 
-    public function getProfil()
-    {
-        return $this->orderBy('tgl_dibuat', 'DESC')->findAll();
-    }
+    protected bool $allowEmptyInserts = false;
+    protected bool $updateOnlyChanged = true;
 
-    public function tambahProfil($data)
-    {
-        return $this->tambah($data);
-    }
+    protected array $casts = [];
+    protected array $castHandlers = [];
 
-    public function updateProfil($id_profil, $data)
-    {
-        return $this->edit($id_profil, $data);
-    }
+    // Dates
+    protected $useTimestamps = false;
+    protected $dateFormat    = 'datetime';
+    protected $createdField  = 'created_at';
+    protected $updatedField  = 'updated_at';
+    protected $deletedField  = 'deleted_at';
 
-    public function hapusProfil($id_profil)
-    {
-        return $this->hapus($id_profil);
-    }
+    // Validation
+    protected $validationRules      = [];
+    protected $validationMessages   = [];
+    protected $skipValidation       = false;
+    protected $cleanValidationRules = true;
+
+    // Callbacks
+    protected $allowCallbacks = true;
+    protected $beforeInsert   = [];
+    protected $afterInsert    = [];
+    protected $beforeUpdate   = [];
+    protected $afterUpdate    = [];
+    protected $beforeFind     = [];
+    protected $afterFind      = [];
+    protected $beforeDelete   = [];
+    protected $afterDelete    = [];
 }

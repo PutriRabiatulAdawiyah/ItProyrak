@@ -12,7 +12,7 @@ class ModelProperty extends Model
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = ["nama_property", "harga_property", "status_property"];
+    protected $allowedFields    = ["nama_property", "harga_property", "status_property", "foto_property"];
 
     protected bool $allowEmptyInserts = false;
     protected bool $updateOnlyChanged = true;

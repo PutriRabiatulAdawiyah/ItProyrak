@@ -16,7 +16,7 @@ class Property extends BaseController
         $model = new ModelProperty();
         $idproperty = $this->request->getVar("id_property");
         $model->delete($idproperty);
-        return redirect()->back();
+        return redirect()->to("/property");
     }
 
     public function edit()
@@ -31,7 +31,27 @@ class Property extends BaseController
         ];
 
         $model->update($idproperty, $data);
-        return redirect()->back();
+        return redirect()->to("/property");
+    }
+
+    public function tambah()
+    {
+        $model = new ModelProperty();
+        
+        $foto = $this->request->getFile("foto_property");
+
+        $namaGambar = $foto->getRandomName();
+        $foto->move(FCPATH . "/gambar", $namaGambar);
+
+        $data = [   
+            "nama_property" => $this->request->getVar("nama_property"), 
+            "harga_property" => $this->request->getVar("harga_property"),
+            "status_property" => $this->request->getVar("status_property"),
+            "foto_property" => $namaGambar,
+        ];
+
+        $model->insert($data);
+        return redirect()->to("/property");
     }
 
 
