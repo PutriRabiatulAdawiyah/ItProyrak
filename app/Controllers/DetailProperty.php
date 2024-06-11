@@ -10,7 +10,11 @@ class DetailProperty extends BaseController
     public function index(): string
     {
         $model = new ModelDetailProperty();
-        return view('backendadmin/detailproperty', ["detailproperty" => $model->findAll()]);
+        $properties = (new ModelProperty())->findAll(); // Assuming you have a ModelProperty to fetch properties
+        return view('backendadmin/detailproperty', [
+            "detailproperty" => $model->findAll(),
+            "properties" => $properties
+        ]);
     }
 
     public function hapus()
@@ -26,17 +30,17 @@ class DetailProperty extends BaseController
         $model = new ModelDetailProperty();
         $id_detail_property = $this->request->getVar("id_detail_property");
 
-        $foto = $this->request->getFile("foto_detail_property");
-        if ($foto->isValid() && !$foto->hasMoved()) {
-            $namaGambar = $foto->getRandomName();
-            $foto->move(FCPATH . 'gambar', $namaGambar);
-            $data['foto_detail_property'] = $namaGambar;
-        }
-
         $data = [
             "nama_detail_property" => $this->request->getVar("nama_detail_property"),
             "deskripsi_detail_property" => $this->request->getVar("deskripsi_detail_property"),
         ];
+
+        $foto = $this->request->getFile("foto_detail_property");
+        if ($foto && $foto->isValid() && !$foto->hasMoved()) {
+            $namaGambar = $foto->getRandomName();
+            $foto->move(FCPATH . 'gambar', $namaGambar);
+            $data['foto_detail_property'] = $namaGambar;
+        }
 
         $model->update($id_detail_property, $data);
         return redirect()->to("/detailproperty");
@@ -47,7 +51,7 @@ class DetailProperty extends BaseController
         $model = new ModelDetailProperty();
 
         $foto = $this->request->getFile("foto_detail_property");
-        if ($foto->isValid() && !$foto->hasMoved()) {
+        if ($foto && $foto->isValid() && !$foto->hasMoved()) {
             $namaGambar = $foto->getRandomName();
             $foto->move(FCPATH . 'gambar', $namaGambar);
         } else {

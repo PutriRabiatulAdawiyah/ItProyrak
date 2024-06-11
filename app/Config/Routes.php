@@ -24,10 +24,11 @@ use CodeIgniter\Router\RouteCollection;
  $routes->post('profil/edit', 'Profil::edit');
  $routes->post('profil/hapus', 'Profil::hapus');
 
- $routes->get('property', 'Property::index');
- $routes->post('property/tambah', 'Property::tambah');
- $routes->post('property/hapus', 'Property::hapus');
- $routes->post('property/edit', 'Property::edit');
+$routes->get('property', 'Property::index');
+$routes->post('property/tambah', 'Property::tambah');
+$routes->post('property/hapus', 'Property::hapus');
+$routes->post('property/edit', 'Property::edit');
+
 
  $routes->get('detailproperty', 'DetailProperty::index');
  $routes->post('detailproperty/tambah', 'DetailProperty::tambah');

@@ -32,8 +32,8 @@
                                         <div class="mb-3">
                                             <label for="idProperty" class="form-label">Pilih Property</label>
                                             <select name="id_property" class="custom-select" id="idProperty">
-                                                <?php foreach ($detailproperty as $data): ?>
-                                                    <option value="<?= $data["id_detail_property"] ?>"><?= $data["nama_detail_property"] ?></option>
+                                                <?php foreach ($properties as $property): ?>
+                                                    <option value="<?= $property["id_property"] ?>"><?= $property["nama_property"] ?></option>
                                                 <?php endforeach; ?>
                                             </select>
                                         </div>
