@@ -4,18 +4,21 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
-class ModelDetailProperty extends Model
+class Pembayaran_Model extends Model
 {
-    protected $table            = 'detail_property';
-    protected $primaryKey       = 'id_detail_property';
+    protected $table            = 'pembayaran';
+    protected $primaryKey       = 'id_pembayaran';
     protected $useAutoIncrement = true;
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = ["nama_detail_property", "foto_detail_property", "id_property", "deskripsi_detail_property"];
+    protected $allowedFields    = ["rekening_pembayaran", "tgl_pembayaran", "jml_Pembayaran", "nama", "bank", "no_rekening", "id_data_sewa", "idpenyewa"];
 
     protected bool $allowEmptyInserts = false;
     protected bool $updateOnlyChanged = true;
+
+    protected array $casts = [];
+    protected array $castHandlers = [];
 
     // Dates
     protected $useTimestamps = false;

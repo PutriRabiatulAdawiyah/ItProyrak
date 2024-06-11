@@ -85,12 +85,19 @@
 							<p>Penyewa</p>
 						</a>
 					</li>
+					</li>
+					<li class="nav-item">
+						<a href="/pemesanan">
+							<i class="la la-bell"></i>
+							<p>Pemesanan</p>
+						</a>
+					</li>
 					<li class="nav-item">
 						<a href="/pembayaran">
 							<i class="la la-bell"></i>
 							<p>Pembayaran</p>
 						</a>
-					</li>
+					
 					<li class="nav-item">
 						<a href="/datasewa">
 							<i class="la la-font"></i>

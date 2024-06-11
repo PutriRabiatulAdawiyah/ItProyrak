@@ -8,27 +8,17 @@ class Profil extends BaseController
 {
     protected $profilModel;
 
-    // public function __construct()
-    // {
-    //     $this->profilModel = new Profil_Model();
-    // }
-
     public function index()
     {
         $model = new Profil_Model();
-        return view('backendadmin/profil_view', ["profil"=> $model->findAll()]);
+        return view('backendadmin/profil', ["profil"=> $model->findAll()]);
     }
 
     public function tambah()
     {
         $model = new Profil_Model();
-        
-        // $foto = $this->request->getFile("foto_property");
 
-        // $namaGambar = $foto->getRandomName();
-        // $foto->move(FCPATH . "/gambar", $namaGambar);
-
-        $data = [   
+        $data = [
             "judul" => $this->request->getVar("judul"), 
             "keterangan" => $this->request->getVar("keterangan"),
             "deskripsi" => $this->request->getVar("deskripsi"),
@@ -36,29 +26,28 @@ class Profil extends BaseController
         ];
 
         $model->insert($data);
-        return redirect()->to("/profil");
+        return redirect()->to("/profil")->with('status', 'Profil berhasil ditambahkan');
     }
 
-    public function edit($id_profil)
+    public function edit()
     {
-        $model = new ModelProperty()
+        $model = new Profil_Model();
         $idprofil = $this->request->getVar("id_profil");
 
-        $data[
+        $data = [
             "judul" => $this->request->getVar("judul"), 
             "keterangan" => $this->request->getVar("keterangan"),
             "deskripsi" => $this->request->getVar("deskripsi"),
         ];
         $model->update($idprofil, $data);
-        return redirect()->to("/profil")
+        return redirect()->to("/profil")->with('status', 'Profil berhasil diperbarui');
     }
 
-    public function hapus($id_profil)
+    public function hapus()
     {
-        if ($this->profilModel->hapusProfil($id_profil)) {
-            return redirect()->to(base_url('profil'))->with('status', 'Profil berhasil dihapus');
-        } else {
-            return redirect()->to(base_url('profil'))->with('status', 'Gagal menghapus profil');
-        }
+        $model = new Profil_Model();
+        $idprofil = $this->request->getVar("id_profil");
+        $model->delete($idprofil);
+        return redirect()->to("/profil")->with('status', 'Profil berhasil dihapus');
     }
 }
