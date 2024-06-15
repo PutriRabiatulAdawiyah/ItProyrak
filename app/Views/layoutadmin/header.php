@@ -16,6 +16,7 @@
 	<link rel="stylesheet" href="/admin/css/ready.css">
 	<link rel="stylesheet" href="/admin/css/demo.css">
 	<link rel="stylesheet" href="/admin/css/action.css">
+	<script src="https://cdn.ckeditor.com/4.16.2/standard/ckeditor.js"></script>
 	<style>
 
 	</style>

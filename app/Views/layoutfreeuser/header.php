@@ -1,9 +1,4 @@
-<!-- /*
-* Template Name: Property
-* Template Author: Untree.co
-* Template URI: https://untree.co/
-* License: https://creativecommons.org/licenses/by/3.0/
-*/ -->
+<!-- bagian awal file header -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -44,28 +39,25 @@
 
   <nav class="site-nav">
     <div class="container">
-      <div class="menu-bg-wrap">
-        <div class="site-navigation">
-          <a href="/index" class="logo m-0 float-start">Property</a>
-
-          <ul class="js-clone-nav d-none d-lg-inline-block text-start site-menu float-end">
-            <li><a href="<?= base_url('/'); ?>">Home</a></li>
-            <li><a href="<?= base_url('properties'); ?>">Properties</a></li>
-            <li><a href="/index">Home</a></li>
-            <li><a href="/about">About</a></li>
-            <li class="active"><a href="contact">Contact Us</a></li>
-          </ul>
-
-          <a href="#"
-            class="burger light me-auto float-end mt-1 site-menu-toggle js-menu-toggle d-inline-block d-lg-none"
-            data-toggle="collapse" data-target="#main-navbar">
-            <span></span>
-          </a>
+        <div class="menu-bg-wrap">
+            <div class="site-navigation">
+                <a href="/index" class="logo m-0 float-start">Property</a>
+                <ul class="js-clone-nav d-none d-lg-inline-block text-start site-menu float-end">
+                    <li><a href="<?= base_url('/'); ?>">Home</a></li>
+                    <li><a href="<?= base_url('properties'); ?>">Properties</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li class="active"><a href="/contact">Contact Us</a></li>
+                    <?php foreach ($profil as $data): ?>
+                        <li><a href="#"><?= $data['judul'] ?></a></li>
+                    <?php endforeach; ?>
+                </ul>
+                <a href="#" class="burger light me-auto float-end mt-1 site-menu-toggle js-menu-toggle d-inline-block d-lg-none" data-toggle="collapse" data-target="#main-navbar">
+                    <span></span>
+                </a>
+            </div>
         </div>
-      </div>
     </div>
     <div class="side-new mr3">
-      <a href="adminlogin" class="btn btn-primary py-2 px-3">LOGIN</a>
-      
+        <a href="adminlogin" class="btn btn-primary py-2 px-3">LOGIN</a>
     </div>
-  </nav>
+</nav>

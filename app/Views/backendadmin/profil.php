@@ -20,77 +20,78 @@
                     </button>
 
                     <!-- Modal Tambah Profil -->
-                    <div class="modal fade" id="tambahModal" tabindex="-1" aria-labelledby="tambahModalLabel" aria-hidden="true">
-                        <div class="modal-dialog modal-lg">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="tambahModalLabel">TAMBAH PROFIL</h5>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
-                                </div>
-                                <form action="/profil/tambah" method="post" enctype="multipart/form-data">
-                                    <div class="modal-body">
-                                        <div class="mb-3">
-                                            <label for="tgl_dibuat" class="form-label">Tanggal Dibuat</label>
-                                            <input type="date" name="tgl_dibuat" placeholder="Masukkan waktu" class="form-control" id="tgl_dibuat">
-                                        </div>
-                                        <div class="mb-3">
-                                            <label for="judul" class="form-label">Judul</label>
-                                            <input type="text" name="judul" placeholder="Masukkan Nama Detail Property" class="form-control" id="judul">
-                                        </div>
-                                        <div class="mb-3">
-                                            <label for="keterangan" class="form-label">Keterangan</label>
-                                            <input type="text" name="keterangan" placeholder="Masukkan Foto keterangan" class="form-control" id="keterangan">
-                                        </div>
-                                        <div class="mb-3">
-                                            <label for="deskripsi" class="form-label">Deskripsi</label>
-                                            <input type="text" name="deskripsi" placeholder="Masukkan Deskripsi" class="form-control" id="deskripsi">
-                                        </div>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                        <button type="submit" class="btn btn-primary">Simpan Data</button>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
+<div class="modal fade" id="tambahModal" tabindex="-1" aria-labelledby="tambahModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="tambahModalLabel">TAMBAH PROFIL</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <form action="/profil/tambah" method="post" enctype="multipart/form-data">
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="tgl_dibuat" class="form-label">Tanggal Dibuat</label>
+                        <input type="date" name="tgl_dibuat" placeholder="Masukkan waktu" class="form-control" id="tgl_dibuat">
                     </div>
+                    <div class="mb-3">
+                        <label for="judul" class="form-label">Judul</label>
+                        <input type="text" name="judul" placeholder="Masukkan Nama Detail Property" class="form-control" id="judul">
+                    </div>
+                    <div class="mb-3">
+                        <label for="keterangan" class="form-label">Keterangan</label>
+                        <input type="text" name="keterangan" placeholder="Masukkan Foto keterangan" class="form-control" id="keterangan">
+                    </div>
+                    <div class="mb-3">
+                        <label for="deskripsi" class="form-label">Deskripsi</label>
+                        <textarea name="deskripsi" placeholder="Masukkan Deskripsi" class="form-control" id="deskripsi"></textarea>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary">Simpan Data</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
 
                     <!-- Modal Edit Profil -->
-                    <div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="editModalLabel" aria-hidden="true">
-                        <div class="modal-dialog modal-lg">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="editModalLabel">EDIT PROFIL</h5>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
-                                </div>
-                                <form action="/profil/edit" method="post">
-                                    <div class="modal-body">
-                                        <div class="mb-3">
-                                            <label for="edit_judul" class="form-label">Edit Judul Profil</label>
-                                            <input type="text" name="judul" placeholder="Masukkan Judul" class="form-control" id="edit_judul">
-                                        </div>
-                                        <div class="mb-3">
-                                            <label for="edit_keterangan" class="form-label">Edit Keterangan Profil</label>
-                                            <input type="text" name="keterangan" placeholder="Masukkan Keterangan Baru" class="form-control" id="edit_keterangan">
-                                        </div>
-                                        <div class="mb-3">
-                                            <label for="edit_deskripsi" class="form-label">Edit Deskripsi Profil</label>
-                                            <input type="text" name="deskripsi" placeholder="Masukkan Deskripsi Detail Property" class="form-control" id="edit_deskripsi">
-                                        </div>
-                                        <input type="hidden" name="id_profil" id="edit_id_profil">
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                        <button type="submit" class="btn btn-primary">Simpan Data</button>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
+<div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="editModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="editModalLabel">EDIT PROFIL</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <form action="/profil/edit" method="post">
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="edit_judul" class="form-label">Edit Judul Profil</label>
+                        <input type="text" name="judul" placeholder="Masukkan Judul" class="form-control" id="edit_judul">
                     </div>
+                    <div class="mb-3">
+                        <label for="edit_keterangan" class="form-label">Edit Keterangan Profil</label>
+                        <input type="text" name="keterangan" placeholder="Masukkan Keterangan Baru" class="form-control" id="edit_keterangan">
+                    </div>
+                    <div class="mb-3">
+                        <label for="edit_deskripsi" class="form-label">Edit Deskripsi Profil</label>
+                        <textarea name="deskripsi" placeholder="Masukkan Deskripsi Detail Property" class="form-control" id="edit_deskripsi"></textarea>
+                    </div>
+                    <input type="hidden" name="id_profil" id="edit_id_profil">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary">Simpan Data</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
 
                     <!-- Modal Hapus Profil -->
                     <div class="modal fade" id="hapusModal" tabindex="-1" aria-labelledby="hapusModalLabel" aria-hidden="true">
@@ -151,7 +152,23 @@
 </div>
 <?php echo view('layoutadmin/footer'); ?>
 
-<script>
+    <script>
+    // Inisialisasi CKEditor untuk modal tambah saat modal dibuka
+    $('#tambahModal').on('shown.bs.modal', function () {
+        if (CKEDITOR.instances['deskripsi']) {
+            CKEDITOR.instances['deskripsi'].destroy();
+        }
+        CKEDITOR.replace('deskripsi');
+    });
+
+    // Inisialisasi CKEditor untuk modal edit saat modal dibuka
+    $('#editModal').on('shown.bs.modal', function () {
+        if (CKEDITOR.instances['edit_deskripsi']) {
+            CKEDITOR.instances['edit_deskripsi'].destroy();
+        }
+        CKEDITOR.replace('edit_deskripsi');
+    });
+
     // Script untuk menampilkan data pada modal edit
     document.querySelectorAll('.btn-edit').forEach(button => {
         button.addEventListener('click', function() {
@@ -159,11 +176,17 @@
             const judul = this.getAttribute('data-judul');
             const keterangan = this.getAttribute('data-keterangan');
             const deskripsi = this.getAttribute('data-deskripsi');
-            
+
             document.getElementById('edit_id_profil').value = id;
             document.getElementById('edit_judul').value = judul;
             document.getElementById('edit_keterangan').value = keterangan;
             document.getElementById('edit_deskripsi').value = deskripsi;
+
+            // Inisialisasi ulang CKEditor
+            if (CKEDITOR.instances['edit_deskripsi']) {
+                CKEDITOR.instances['edit_deskripsi'].destroy();
+            }
+            CKEDITOR.replace('edit_deskripsi');
         });
     });
 
@@ -175,3 +198,23 @@
         });
     });
 </script>
+
+<!-- Script CKEditor dari CDN -->
+<script src="https://cdn.ckeditor.com/4.16.0/standard/ckeditor.js"></script>
+
+<script>
+    // Inisialisasi CKEditor untuk modal tambah saat modal dibuka
+    $('#tambahModal').on('shown.bs.modal', function () {
+        // Hancurkan instance CKEditor jika sudah ada sebelumnya
+        if (CKEDITOR.instances['deskripsi']) {
+            CKEDITOR.instances['deskripsi'].destroy();
+        }
+        
+        // Konfigurasi CKEditor dengan plugin untuk mengunggah gambar
+        CKEDITOR.replace('deskripsi', {
+            filebrowserUploadUrl: '/upload/image', // URL endpoint untuk mengunggah gambar
+            filebrowserUploadMethod: 'form' // Metode pengiriman form untuk pengunggahan
+        });
+    });
+</script>
+

@@ -14,6 +14,8 @@ use CodeIgniter\Router\RouteCollection;
  $routes->get('userregistrasi', 'Registrasi::index');
  $routes->get('homeadmin', 'HomeAdmin::index');
  $routes->get('datasewa', 'DataSewa::index');
+
+ $routes->get('/profilview', 'Home::profil');
  
  $routes->get('penyewa', 'Penyewa::index');
  $routes->post('penyewa/edit', 'Penyewa::edit');
